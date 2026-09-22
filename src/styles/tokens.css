@@ -1,0 +1,55 @@
+:root {
+  /* Brand: Deep Charcoal & Warm Orange / Amber */
+  --color-primary: #18181b;         /* Deep charcoal / almost-black */
+  --color-primary-hover: #27272a;
+  --color-primary-muted: #3f3f46;
+
+  --color-accent: #ea580c;          /* Warm vibrant orange (MyFormConnect inspired) */
+  --color-accent-hover: #c2410c;    /* Deep warm amber */
+  --color-accent-soft: #fff7ed;     /* Very light warm cream/orange */
+  --color-accent-border: #fed7aa;   /* Soft warm orange border */
+  --color-accent-secondary: #f59e0b;/* Muted warm yellow/gold */
+
+  /* Backgrounds: Warm Off-White & Clean Neutrals */
+  --color-bg-page: #fcfbf9;         /* Warm off-white */
+  --color-bg-subtle: #f5f5f4;       /* Very light warm gray */
+  --color-bg-muted: #e7e5e4;        /* Soft warm stone divider */
+  --color-surface: #ffffff;         /* Pure white for cards */
+
+  /* Text: High legibility charcoal & warm muted gray */
+  --color-text-heading: #18181b;
+  --color-text-body: #3f3f46;
+  --color-text-muted: #71717a;
+  --color-text-subtle: #a1a1aa;
+
+  /* Borders: Soft warm stone */
+  --color-border: #e7e5e4;
+  --color-border-hover: #d6d3d1;
+  --color-border-strong: #a8a29e;
+
+  /* Form & Status Tokens */
+  --color-success: #15803d;
+  --color-success-bg: #f0fdf4;
+  --color-success-border: #bbf7d0;
+
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fecaca;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  /* Restrained SaaS Shadow Hierarchy */
+  --shadow-xs: 0 1px 2px 0 rgba(24, 24, 27, 0.03);
+  --shadow-card: 0 1px 3px 0 rgba(24, 24, 27, 0.04), 0 1px 2px -1px rgba(24, 24, 27, 0.02);
+  --shadow-card-hover: 0 12px 28px -6px rgba(24, 24, 27, 0.08), 0 6px 12px -4px rgba(24, 24, 27, 0.04);
+  --shadow-hero: 0 25px 60px -15px rgba(24, 24, 27, 0.09), 0 10px 20px -8px rgba(24, 24, 27, 0.04);
+  --shadow-hero-hover: 0 32px 70px -15px rgba(24, 24, 27, 0.13), 0 12px 24px -8px rgba(24, 24, 27, 0.05);
+}

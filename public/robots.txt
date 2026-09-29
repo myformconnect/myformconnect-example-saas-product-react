@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Index
-Sitemap: https://avorio1.vercel.app/sitemap.xml
+Sitemap: https://orevio1.vercel.app/sitemap.xml

@@ -121,7 +121,7 @@ export default function SupportForm({ className = '' }) {
       setFile(null);
     } catch {
       setStatus('error');
-      setServerError('Unable to submit your request at this time. Please try again or email team@avorioapp.example.');
+      setServerError('Unable to submit your request at this time. Please try again or email team@orevioapp.example.');
     }
   };
 

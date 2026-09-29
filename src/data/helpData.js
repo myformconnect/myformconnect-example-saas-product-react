@@ -2,18 +2,18 @@ export const helpCategories = [
   {
     id: 'getting-started',
     title: 'Getting Started',
-    description: 'Download, install, and set up your Avorio desktop workspace.',
+    description: 'Download, install, and set up your Orevio desktop workspace.',
     icon: 'Download',
     articles: [
-      { id: 'gs-1', title: 'How do I download and install Avorio?', reads: '2 min read' },
-      { id: 'gs-2', title: 'Setting your keyboard shortcut to open Avorio', reads: '2 min read' },
+      { id: 'gs-1', title: 'How do I download and install Orevio?', reads: '2 min read' },
+      { id: 'gs-2', title: 'Setting your keyboard shortcut to open Orevio', reads: '2 min read' },
       { id: 'gs-3', title: 'Adding your first favorite app and folder', reads: '2 min read' },
-      { id: 'gs-4', title: 'How to make Avorio open when your computer starts', reads: '1 min read' },
+      { id: 'gs-4', title: 'How to make Orevio open when your computer starts', reads: '1 min read' },
     ]
   },
   {
-    id: 'using-avorio',
-    title: 'Using Avorio',
+    id: 'using-orevio',
+    title: 'Using Orevio',
     description: 'Learn the simple day-to-day features that save you time.',
     icon: 'AppWindow',
     articles: [
@@ -65,7 +65,7 @@ export const helpCategories = [
     description: 'Simple answers to common questions and how to contact support.',
     icon: 'HelpCircle',
     articles: [
-      { id: 'tb-1', title: 'Avorio is not opening with my shortcut', reads: '2 min read' },
+      { id: 'tb-1', title: 'Orevio is not opening with my shortcut', reads: '2 min read' },
       { id: 'tb-2', title: 'How do I check for updates?', reads: '1 min read' },
       { id: 'tb-3', title: 'Managing your Pro subscription and license', reads: '2 min read' },
       { id: 'tb-4', title: 'How do I contact support?', reads: '1 min read' },
@@ -75,20 +75,20 @@ export const helpCategories = [
 
 export const generalFaqs = [
   {
-    question: 'What is Avorio?',
-    answer: 'Avorio is a simple desktop helper that puts the apps, files, shortcuts, and routines you use most into one convenient place.'
+    question: 'What is Orevio?',
+    answer: 'Orevio is a simple desktop helper that puts the apps, files, shortcuts, and routines you use most into one convenient place.'
   },
   {
     question: 'How do I add an app or file?',
-    answer: 'You can easily drag any app or folder into Avorio, or click "+ Add" to choose from your computer. It only takes a second.'
+    answer: 'You can easily drag any app or folder into Orevio, or click "+ Add" to choose from your computer. It only takes a second.'
   },
   {
     question: 'How do routines work?',
     answer: 'A routine groups together everyday actions. For example, your "Morning setup" routine could open your work email, your calendar, and your project folder all at once.'
   },
   {
-    question: 'Which computers can run Avorio?',
-    answer: 'Avorio is available for Windows 10/11 and macOS computers. It is lightweight, fast, and easy to install.'
+    question: 'Which computers can run Orevio?',
+    answer: 'Orevio is available for Windows 10/11 and macOS computers. It is lightweight, fast, and easy to install.'
   },
   {
     question: 'Is there a free version?',

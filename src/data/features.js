@@ -55,7 +55,7 @@ export const featureGroups = [
     id: 'keep-favorites-close',
     title: 'Keep your favorites close',
     badge: 'Favorites',
-    description: 'Pin the apps, spreadsheets, links, and documents you open every single day right to your Avorio window.',
+    description: 'Pin the apps, spreadsheets, links, and documents you open every single day right to your Orevio window.',
     highlights: ['Pin apps, folders, and files', 'Drag and drop to rearrange', 'Always one shortcut away']
   },
   {
@@ -69,14 +69,14 @@ export const featureGroups = [
     id: 'organize-your-work',
     title: 'Organize your work',
     badge: 'Organization',
-    description: 'Keep files and tools tidy without creating clutter. Avorio makes it easy to keep your most-used items neatly categorized.',
+    description: 'Keep files and tools tidy without creating clutter. Orevio makes it easy to keep your most-used items neatly categorized.',
     highlights: ['Neat visual categories', 'Quick shortcuts to key folders', 'Less searching through buried subfolders']
   },
   {
     id: 'remember-copied-items',
     title: 'Remember copied items',
     badge: 'Clipboard',
-    description: 'Ever copy something and accidentally overwrite it? Avorio keeps recent links, copied text, and notes right at your fingertips.',
+    description: 'Ever copy something and accidentally overwrite it? Orevio keeps recent links, copied text, and notes right at your fingertips.',
     highlights: ['Quickly browse recently copied text', 'Paste previous items easily', 'Clear history anytime']
   },
   {
@@ -92,7 +92,7 @@ export const howItWorksSteps = [
   {
     step: '01',
     title: 'Add the things you use',
-    description: 'Add your favorite apps, important files, folders, and everyday shortcuts to Avorio.'
+    description: 'Add your favorite apps, important files, folders, and everyday shortcuts to Orevio.'
   },
   {
     step: '02',

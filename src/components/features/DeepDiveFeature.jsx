@@ -16,7 +16,7 @@ export default function DeepDiveFeature() {
               Group common tasks and open them with one click.
             </h3>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-              Skip the repetitive routine of manually opening four different apps and folders every morning. Avorio groups your everyday actions together so you can start working right away.
+              Skip the repetitive routine of manually opening four different apps and folders every morning. Orevio groups your everyday actions together so you can start working right away.
             </p>
 
             <div className="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-700">
@@ -119,7 +119,7 @@ export default function DeepDiveFeature() {
               Never lose something you copied earlier.
             </h3>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-              Accidentally copied over an important link or address? Avorio keeps a handy list of things you copied recently so you can paste them again without searching.
+              Accidentally copied over an important link or address? Orevio keeps a handy list of things you copied recently so you can paste them again without searching.
             </p>
 
             <div className="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-700">

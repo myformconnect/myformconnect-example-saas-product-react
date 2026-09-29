@@ -1,6 +1,6 @@
-# Robots.txt for Avorio
+# Robots.txt for Orevio
 User-agent: *
 Allow: /
 
 # Sitemap Index
-Sitemap: https://orevio.vercel.app/sitemap.xml
+Sitemap: https://avorio1.vercel.app/sitemap.xml

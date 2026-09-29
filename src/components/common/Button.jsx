@@ -27,7 +27,7 @@ export default function Button({
   };
 
   const variantStyles = {
-    // Avorio Sky Blue & Clean Slate Palette
+    // Orevio Sky Blue & Clean Slate Palette
     primary: 'bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700 border border-sky-500 shadow-xs hover:shadow-md hover:shadow-sky-500/20',
     secondary: 'bg-white text-slate-800 hover:bg-slate-50 hover:text-sky-700 border border-slate-200 hover:border-sky-300 shadow-xs hover:shadow-sm',
     dark: 'bg-slate-900 text-white hover:bg-slate-800 hover:text-sky-300 border border-slate-800 shadow-xs',

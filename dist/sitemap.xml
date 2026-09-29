@@ -5,7 +5,7 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- Homepage -->
   <url>
-    <loc>https://orevio.vercel.app/</loc>
+    <loc>https://avorio1.vercel.app/</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
   <!-- Features -->
   <url>
-    <loc>https://orevio.vercel.app/features</loc>
+    <loc>https://avorio1.vercel.app/features</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
 
   <!-- Pricing -->
   <url>
-    <loc>https://orevio.vercel.app/pricing</loc>
+    <loc>https://avorio1.vercel.app/pricing</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
 
   <!-- Help Center -->
   <url>
-    <loc>https://orevio.vercel.app/help</loc>
+    <loc>https://avorio1.vercel.app/help</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -37,7 +37,7 @@
 
   <!-- Contact Us -->
   <url>
-    <loc>https://orevio.vercel.app/contact</loc>
+    <loc>https://avorio1.vercel.app/contact</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -45,7 +45,7 @@
 
   <!-- Careers -->
   <url>
-    <loc>https://orevio.vercel.app/careers</loc>
+    <loc>https://avorio1.vercel.app/careers</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

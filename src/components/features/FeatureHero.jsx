@@ -5,7 +5,7 @@ import { Download, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function FeatureHero() {
   const handleDownload = () => {
-    alert('Thank you for trying Avorio! This is a demo product for simple desktop productivity.');
+    alert('Thank you for trying Orevio! This is a demo product for simple desktop productivity.');
   };
 
   return (
@@ -21,12 +21,12 @@ export default function FeatureHero() {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-          Avorio puts your favorite apps, folders, files, and everyday routines in one friendly place so you can get things done without the clutter.
+          Orevio puts your favorite apps, folders, files, and everyday routines in one friendly place so you can get things done without the clutter.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button onClick={handleDownload} variant="primary" size="lg" icon={Download} iconPosition="left">
-            Download Avorio
+            Download Orevio
           </Button>
           <Button to="/pricing" variant="secondary" size="lg" icon={ArrowRight} iconPosition="right">
             View Pricing Plans

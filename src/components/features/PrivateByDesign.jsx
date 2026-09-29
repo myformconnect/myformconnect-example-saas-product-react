@@ -10,7 +10,7 @@ const pillars = [
   {
     icon: Sparkles,
     title: 'Clean and distraction-free',
-    description: 'No unnecessary popups, no clutter, and no complex menus. Avorio stays quietly in the background until you need it.'
+    description: 'No unnecessary popups, no clutter, and no complex menus. Orevio stays quietly in the background until you need it.'
   },
   {
     icon: Sliders,
@@ -36,7 +36,7 @@ export default function PrivateByDesign() {
             Your everyday tools, without the clutter.
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-            Avorio is designed to be a simple, friendly helper on your desktop. Keep the tools you use most within easy reach without turning everyday tasks into complicated workflows.
+            Orevio is designed to be a simple, friendly helper on your desktop. Keep the tools you use most within easy reach without turning everyday tasks into complicated workflows.
           </p>
         </div>
 

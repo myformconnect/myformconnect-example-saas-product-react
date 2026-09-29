@@ -133,7 +133,7 @@ export default function CareerApplicationForm({ className = '' }) {
       setFile(null);
     } catch {
       setStatus('error');
-      setServerError('Unable to submit your application at this time. Please try again or email careers@avorioapp.example.');
+      setServerError('Unable to submit your application at this time. Please try again or email careers@orevioapp.example.');
     }
   };
 
@@ -145,7 +145,7 @@ export default function CareerApplicationForm({ className = '' }) {
         </div>
         <h3 className="text-xl font-semibold text-slate-900">Application Submitted!</h3>
         <p className="text-sm text-slate-600 max-w-sm mx-auto leading-relaxed">
-          Thank you for your interest in joining Avorio. Our talent team reviews every submission and will get in touch if there is a strong match.
+          Thank you for your interest in joining Orevio. Our talent team reviews every submission and will get in touch if there is a strong match.
         </p>
         <div className="pt-2">
           <Button
@@ -292,7 +292,7 @@ export default function CareerApplicationForm({ className = '' }) {
           rows={3}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="A quick note about your background, favorite tools, or what excites you about Avorio..."
+          placeholder="A quick note about your background, favorite tools, or what excites you about Orevio..."
           className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-colors"
         />
       </div>

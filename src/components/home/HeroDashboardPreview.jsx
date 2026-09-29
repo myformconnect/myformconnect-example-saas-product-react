@@ -91,7 +91,7 @@ export default function HeroDashboardPreview() {
                 icon={Download}
                 iconPosition="left"
               >
-                Download Avorio
+                Download Orevio
               </Button>
               <Button
                 onClick={handleSeeHowItWorks}
@@ -117,7 +117,7 @@ export default function HeroDashboardPreview() {
             </div>
           </div>
 
-          {/* Right Column: Fictional Avorio Desktop Window Preview */}
+          {/* Right Column: Fictional Orevio Desktop Window Preview */}
           <div className="lg:col-span-7">
             <div
               className={`transition-all duration-700 transform ${
@@ -136,7 +136,7 @@ export default function HeroDashboardPreview() {
                     <span className="w-3 h-3 rounded-full bg-slate-300 border border-slate-400/30 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-slate-300 border border-slate-400/30 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-slate-300 border border-slate-400/30 inline-block" />
-                    <span className="text-xs font-semibold text-slate-800 ml-2">Avorio</span>
+                    <span className="text-xs font-semibold text-slate-800 ml-2">Orevio</span>
                   </div>
 
                   {/* Window Hint */}
@@ -282,7 +282,7 @@ export default function HeroDashboardPreview() {
 
                   {/* Window Bottom Hint */}
                   <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400 select-none">
-                    <span>Avorio is ready</span>
+                    <span>Orevio is ready</span>
                     <span>Click any item to open</span>
                   </div>
                 </div>

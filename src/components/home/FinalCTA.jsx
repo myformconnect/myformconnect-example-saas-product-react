@@ -5,7 +5,7 @@ import { Download, ArrowRight, Check } from 'lucide-react';
 
 export default function FinalCTA() {
   const handleDownload = () => {
-    alert('Thank you for trying Avorio! This is a demo product for simple desktop productivity.');
+    alert('Thank you for trying Orevio! This is a demo product for simple desktop productivity.');
   };
 
   return (
@@ -23,7 +23,7 @@ export default function FinalCTA() {
               </h2>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-md mx-auto">
-                Download Avorio for Windows or macOS. Set up your everyday shortcuts and routines in less than a minute.
+                Download Orevio for Windows or macOS. Set up your everyday shortcuts and routines in less than a minute.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-3">
@@ -35,7 +35,7 @@ export default function FinalCTA() {
                   iconPosition="left"
                   className="w-full sm:w-auto"
                 >
-                  Download Avorio
+                  Download Orevio
                 </Button>
                 <Button
                   to="/features"

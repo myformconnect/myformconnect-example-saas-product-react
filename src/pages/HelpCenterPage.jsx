@@ -73,7 +73,7 @@ export default function HelpCenterPage() {
               Get in touch with us
             </h2>
             <p className="mt-2 text-sm text-slate-600 font-normal">
-              Send us a question or share feedback to help us improve Avorio.
+              Send us a question or share feedback to help us improve Orevio.
             </p>
 
             {/* Tab Pills */}
@@ -133,7 +133,7 @@ export default function HelpCenterPage() {
               <span>Updated recently</span>
             </div>
             <p>
-              In Avorio, everyday actions are designed to be fast and simple. You can drag and drop items directly into the app window, search with a single shortcut, and organize your work without feeling overwhelmed.
+              In Orevio, everyday actions are designed to be fast and simple. You can drag and drop items directly into the app window, search with a single shortcut, and organize your work without feeling overwhelmed.
             </p>
             <p>
               If you ever get stuck or have questions about using this feature, our support team is happy to help you set up your ideal workspace.

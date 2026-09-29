@@ -36,7 +36,7 @@ export default function CareersPage() {
             <ScrollReveal direction="up" delay={50} className="space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200/80 text-xs font-semibold text-sky-700 uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-                <span>Careers at Avorio</span>
+                <span>Careers at Orevio</span>
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
                 We&apos;re always looking for great talent.

@@ -21,7 +21,7 @@ export default function TrustSection() {
             Whether you&apos;re studying, working, creating, or managing your day.
           </h2>
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-            Avorio keeps the things you use most within easy reach so you spend less time searching and more time doing.
+            Orevio keeps the things you use most within easy reach so you spend less time searching and more time doing.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

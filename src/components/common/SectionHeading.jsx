@@ -17,7 +17,7 @@ export default function SectionHeading({
   return (
     <div className={`flex flex-col ${alignClasses[align]} ${maxWidth} mb-12 sm:mb-16 ${className}`}>
       {eyebrow && (
-        <span className="text-xs font-semibold uppercase tracking-wider text-orange-600 mb-2">
+        <span className="text-xs font-semibold uppercase tracking-wider text-sky-600 mb-2">
           {eyebrow}
         </span>
       )}
@@ -27,7 +27,7 @@ export default function SectionHeading({
         </h2>
       )}
       {description && (
-        <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        <p className="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
           {description}
         </p>
       )}

@@ -2,100 +2,100 @@ export const helpCategories = [
   {
     id: 'getting-started',
     title: 'Getting Started',
-    description: 'Learn foundational setup, workspace invitation, and your first automated pipeline.',
-    icon: 'Rocket',
+    description: 'Download, install, and set up your Orevio desktop workspace.',
+    icon: 'Download',
     articles: [
-      { id: 'gs-1', title: 'Account creation and team invitation', reads: '3 min read' },
-      { id: 'gs-2', title: 'Workspace hierarchy and environment setup', reads: '5 min read' },
-      { id: 'gs-3', title: 'Building and publishing your first project pipeline', reads: '6 min read' },
-      { id: 'gs-4', title: 'Inviting collaborators and configuring initial roles', reads: '4 min read' },
+      { id: 'gs-1', title: 'How do I download and install Orevio?', reads: '2 min read' },
+      { id: 'gs-2', title: 'Setting your keyboard shortcut to open Orevio', reads: '2 min read' },
+      { id: 'gs-3', title: 'Adding your first favorite app and folder', reads: '2 min read' },
+      { id: 'gs-4', title: 'How to make Orevio open when your computer starts', reads: '1 min read' },
     ]
   },
   {
-    id: 'product-workflows',
-    title: 'Product & Workflows',
-    description: 'In-depth guides on trigger configuration, logic branches, and reporting dashboards.',
-    icon: 'Cpu',
+    id: 'using-orevio',
+    title: 'Using Orevio',
+    description: 'Learn the simple day-to-day features that save you time.',
+    icon: 'AppWindow',
     articles: [
-      { id: 'pw-1', title: 'Understanding event-driven triggers and payload filters', reads: '7 min read' },
-      { id: 'pw-2', title: 'Managing asynchronous queues and backpressure limits', reads: '5 min read' },
-      { id: 'pw-3', title: 'Exporting analytics and operational SLA reports', reads: '4 min read' },
-      { id: 'pw-4', title: 'Version control and rollback procedures for workflows', reads: '6 min read' },
+      { id: 'un-1', title: 'How do I add an app to Quick Access?', reads: '2 min read' },
+      { id: 'un-2', title: 'How do I view something I copied earlier?', reads: '2 min read' },
+      { id: 'un-3', title: 'Pinning important files for easy access', reads: '2 min read' },
+      { id: 'un-4', title: 'Customizing your workspace appearance', reads: '2 min read' },
     ]
   },
   {
-    id: 'account-billing',
-    title: 'Account & Billing',
-    description: 'Subscription management, plan upgrades, VAT invoices, and seat allocations.',
-    icon: 'CreditCard',
+    id: 'finding-things',
+    title: 'Finding Things',
+    description: 'Quickly locate files, apps, and documents without clicking through folders.',
+    icon: 'Search',
     articles: [
-      { id: 'ab-1', title: 'Changing plans and updating payment methods', reads: '2 min read' },
-      { id: 'ab-2', title: 'Understanding workflow run quotas and overages', reads: '3 min read' },
-      { id: 'ab-3', title: 'Downloading automated invoices and receipts', reads: '2 min read' },
-      { id: 'ab-4', title: 'Cancellation terms and prorated refunds', reads: '3 min read' },
+      { id: 'ft-1', title: 'How do I find a file or document?', reads: '2 min read' },
+      { id: 'ft-2', title: 'Searching through your recent apps', reads: '2 min read' },
+      { id: 'ft-3', title: 'Helpful tips for searching faster', reads: '2 min read' },
+      { id: 'ft-4', title: 'What to do if a file does not appear in search', reads: '2 min read' },
     ]
   },
   {
-    id: 'integrations-api',
-    title: 'Integrations & API',
-    description: 'Connecting standard third-party tools, generating API tokens, and webhook secrets.',
-    icon: 'Cable',
+    id: 'shortcuts',
+    title: 'Shortcuts',
+    description: 'Save frequently used actions and jump to your favorite items quickly.',
+    icon: 'Star',
     articles: [
-      { id: 'ia-1', title: 'Setting up webhook signatures and HMAC-SHA256 verification', reads: '8 min read' },
-      { id: 'ia-2', title: 'Slack bot notifications and interactive alert buttons', reads: '4 min read' },
-      { id: 'ia-3', title: 'GitHub Actions trigger integration guide', reads: '5 min read' },
-      { id: 'ia-4', title: 'Snowflake streaming warehouse connector config', reads: '9 min read' },
+      { id: 'sc-1', title: 'How do I save a shortcut?', reads: '2 min read' },
+      { id: 'sc-2', title: 'Assigning a quick key to an app or website', reads: '2 min read' },
+      { id: 'sc-3', title: 'Changing your favorite shortcuts anytime', reads: '1 min read' },
+      { id: 'sc-4', title: 'Organizing shortcuts by work or personal use', reads: '2 min read' },
     ]
   },
   {
-    id: 'security-governance',
-    title: 'Security & Governance',
-    description: 'Single sign-on, multi-factor authentication, audit logs, and compliance standards.',
-    icon: 'Shield',
+    id: 'routines',
+    title: 'Routines',
+    description: 'Group everyday tasks together so you can start them with one click.',
+    icon: 'Zap',
     articles: [
-      { id: 'sg-1', title: 'Configuring SAML 2.0 Single Sign-On (Okta, Azure AD)', reads: '6 min read' },
-      { id: 'sg-2', title: 'Audit log streaming to Datadog and AWS CloudWatch', reads: '7 min read' },
-      { id: 'sg-3', title: 'Role-Based Access Control (RBAC) matrix definitions', reads: '5 min read' },
-      { id: 'sg-4', title: 'SOC 2 Type II and GDPR data processing agreements', reads: '3 min read' },
+      { id: 'rt-1', title: 'How do I create a routine?', reads: '3 min read' },
+      { id: 'rt-2', title: 'Creating a morning setup routine (Email, Calendar, Notes)', reads: '3 min read' },
+      { id: 'rt-3', title: 'Editing or deleting an existing routine', reads: '2 min read' },
+      { id: 'rt-4', title: 'Sharing a routine with someone on your team', reads: '2 min read' },
     ]
   },
   {
-    id: 'faqs',
-    title: 'Frequently Asked Questions',
-    description: 'Quick direct answers to everyday questions about latency, limits, and uptime.',
+    id: 'troubleshooting',
+    title: 'Troubleshooting',
+    description: 'Simple answers to common questions and how to contact support.',
     icon: 'HelpCircle',
     articles: [
-      { id: 'fq-1', title: 'What is the standard SLA for webhook delivery?', reads: '2 min read' },
-      { id: 'fq-2', title: 'How does Vantage handle network timeouts and retries?', reads: '4 min read' },
-      { id: 'fq-3', title: 'Can we self-host or run on our private VPC?', reads: '3 min read' },
-      { id: 'fq-4', title: 'How are sensitive credentials encrypted at rest?', reads: '4 min read' },
+      { id: 'tb-1', title: 'Orevio is not opening with my shortcut', reads: '2 min read' },
+      { id: 'tb-2', title: 'How do I check for updates?', reads: '1 min read' },
+      { id: 'tb-3', title: 'Managing your Pro subscription and license', reads: '2 min read' },
+      { id: 'tb-4', title: 'How do I contact support?', reads: '1 min read' },
     ]
   }
 ];
 
 export const generalFaqs = [
   {
-    question: 'How fast can our team get started with Vantage?',
-    answer: 'Most engineering and operations teams connect their first workflow within 15 minutes. Our pre-built integrations and zero-code trigger builder make setup straightforward.'
+    question: 'What is Orevio?',
+    answer: 'Orevio is a simple desktop helper that puts the apps, files, shortcuts, and routines you use most into one convenient place.'
   },
   {
-    question: 'How does Vantage handle pricing when adding team members?',
-    answer: 'Billing is automatically adjusted on a prorated basis whenever you invite new colleagues or remove existing members from your workspace.'
+    question: 'How do I add an app or file?',
+    answer: 'You can easily drag any app or folder into Orevio, or click "+ Add" to choose from your computer. It only takes a second.'
   },
   {
-    question: 'Are all API endpoints rate-limited?',
-    answer: 'Starter plans include 120 requests/minute, Professional plans include 1,200 requests/minute, and Enterprise tiers have tailored high-throughput endpoints without artificial throttling.'
+    question: 'How do routines work?',
+    answer: 'A routine groups together everyday actions. For example, your "Morning setup" routine could open your work email, your calendar, and your project folder all at once.'
   },
   {
-    question: 'Where is our operational data hosted?',
-    answer: 'Our infrastructure is hosted in AWS US-East (N. Virginia) and AWS EU-Central (Frankfurt). Enterprise customers can select dedicated regional residency.'
+    question: 'Which computers can run Orevio?',
+    answer: 'Orevio is available for Windows 10/11 and macOS computers. It is lightweight, fast, and easy to install.'
   },
   {
-    question: 'What level of technical support do you provide?',
-    answer: 'All plans include email documentation support. Professional customers enjoy priority responses under 4 hours, and Enterprise accounts receive a dedicated Customer Success Manager.'
+    question: 'Is there a free version?',
+    answer: 'Yes! The Free plan gives you search, quick access to favorite apps, simple shortcuts, and basic clipboard history with no credit card required.'
   },
   {
-    question: 'Can I export all our historical audit logs?',
-    answer: 'Yes. You can export complete activity logs in CSV or JSON at any time, or configure automated continuous streaming directly into S3, Snowflake, or Datadog.'
+    question: 'How do I contact support or ask a question?',
+    answer: 'You can use the Contact Support form right here in the Help Center, or click "Send Feedback" to share a question or suggestion with our team.'
   }
 ];

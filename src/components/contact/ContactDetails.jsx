@@ -1,63 +1,58 @@
 import React from 'react';
 import ScrollReveal from '../common/ScrollReveal';
-import { ShieldCheck, Zap, Users, Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { Sparkles, Users, Clock, Mail, CheckCircle2 } from 'lucide-react';
 
 export default function ContactDetails() {
   const benefits = [
     {
-      icon: ShieldCheck,
-      title: 'Direct architecture evaluation',
-      desc: 'Meet with senior staff engineers to map your custom webhook topology and data retention needs.'
-    },
-    {
-      icon: Zap,
-      title: 'Enterprise POC deployment',
-      desc: 'Test high-volume queues, custom connectors, and API rate limits in a dedicated sandbox environment.'
+      icon: Sparkles,
+      title: 'Simple product walkthrough',
+      desc: 'See how search, favorite shortcuts, and routines look and work in everyday use.'
     },
     {
       icon: Users,
-      title: 'Security review acceleration',
-      desc: 'Immediate access to our SOC 2 Type II compliance reports, penetration tests, and standard enterprise DPAs.'
+      title: 'Setting up for teams or studios',
+      desc: 'Learn how to share favorite links, folders, and routines with team members.'
     },
     {
       icon: Clock,
-      title: 'Rapid onboarding SLA',
-      desc: 'Dedicated customer solutions engineering support during trial migration and workspace launch.'
+      title: 'Quick, friendly 15-minute chat',
+      desc: 'No-pressure, focused conversation tailored directly to what your team needs.'
     }
   ];
 
   return (
     <ScrollReveal className="space-y-8">
       <div>
-        <span className="text-xs font-semibold uppercase tracking-wider text-orange-600 mb-2 block">
-          Enterprise Solutions
+        <span className="text-xs font-semibold uppercase tracking-wider text-sky-600 mb-2 block">
+          Get In Touch
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-slate-900 leading-tight">
-          Let’s discuss your team’s workflow requirements.
+        <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 leading-tight">
+          Have a question?
         </h1>
-        <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-          Whether you are evaluating automated pipelines for a team of 10 or orchestrating mission-critical event streams across an enterprise, our technical team is ready to assist.
+        <p className="mt-3 text-base text-slate-600 leading-relaxed font-normal">
+          Want to see how Orevio could work for your team? Talk to us.
         </p>
       </div>
 
-      {/* Sales Benefits */}
+      {/* Demo Expectations */}
       <div className="space-y-4 pt-2">
-        <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-          What to expect during your demo
-        </h4>
+        <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          What we can cover together
+        </h3>
         <div className="space-y-3">
           {benefits.map((b) => {
             const Icon = b.icon;
             return (
               <div key={b.title} className="flex items-start gap-3">
-                <div className="w-7 h-7 rounded bg-orange-50 text-orange-600 flex items-center justify-center shrink-0 mt-0.5 border border-orange-100">
-                  <Icon className="w-3.5 h-3.5" />
+                <div className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 mt-0.5 border border-sky-100">
+                  <Icon className="w-4 h-4 text-sky-600" />
                 </div>
                 <div>
-                  <h5 className="text-xs sm:text-sm font-semibold text-slate-900 leading-tight">
+                  <h4 className="text-xs sm:text-sm font-semibold text-slate-900 leading-tight">
                     {b.title}
-                  </h5>
-                  <p className="text-xs text-slate-500 leading-normal mt-0.5">
+                  </h4>
+                  <p className="text-xs text-slate-500 leading-normal mt-0.5 font-normal">
                     {b.desc}
                   </p>
                 </div>
@@ -68,18 +63,14 @@ export default function ContactDetails() {
       </div>
 
       {/* Direct Contact Info */}
-      <div className="pt-6 border-t border-stone-200 text-xs text-slate-600 space-y-2.5">
-        <div className="flex items-center gap-2.5">
-          <Mail className="w-4 h-4 text-slate-400 shrink-0" />
-          <span>Enterprise Sales: <a href="mailto:sales@vantage-platform.example" className="text-orange-600 hover:underline">sales@vantage-platform.example</a></span>
+      <div className="pt-6 border-t border-slate-200 space-y-3">
+        <div className="flex items-center gap-2.5 text-xs text-slate-600">
+          <Mail className="w-4 h-4 text-sky-600" />
+          <span>Email our team directly at <strong className="text-slate-900 font-semibold">team@orevioapp.example</strong></span>
         </div>
-        <div className="flex items-center gap-2.5">
-          <Phone className="w-4 h-4 text-slate-400 shrink-0" />
-          <span>General Inquiries: +1 (800) 555-0198 (Mon–Fri 8am–6pm EST)</span>
-        </div>
-        <div className="flex items-center gap-2.5">
-          <MapPin className="w-4 h-4 text-slate-400 shrink-0" />
-          <span>Headquarters: 548 Market Street, Suite 3200, San Francisco, CA 94104</span>
+        <div className="flex items-center gap-2.5 text-xs text-slate-500">
+          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          <span>We respond to inquiries within 1 business day</span>
         </div>
       </div>
     </ScrollReveal>

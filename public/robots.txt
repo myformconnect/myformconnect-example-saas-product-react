@@ -1,0 +1,6 @@
+# Robots.txt for Orevio
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://orevio.vercel.app/sitemap.xml

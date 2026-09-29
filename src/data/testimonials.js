@@ -1,39 +1,26 @@
 export const testimonials = [
   {
-    quote: "Vantage replaced four disconnected internal automation scripts and gave our operations team complete observability into customer provisioning workflows.",
-    author: "Elena Rostova",
-    role: "VP of Engineering",
-    company: "Synthetix Labs",
-    initials: "ER"
+    quote: "Orevio makes my morning setup much easier. I open everything I need without jumping between folders.",
+    author: "Maya",
+    role: "Freelancer",
+    initials: "M"
   },
   {
-    quote: "The interface is delightfully clean and fast. We were able to migrate our critical billing webhooks and reconciliation pipeline in an afternoon without downtime.",
-    author: "Marcus Vance",
-    role: "Head of Infrastructure",
-    company: "Northscale Cloud",
-    initials: "MV"
+    quote: "I mainly use it to keep my work files and favorite apps together. It's surprisingly simple.",
+    author: "Daniel",
+    role: "Designer",
+    initials: "D"
   },
   {
-    quote: "The reliability has been rock solid. Sub-second queue execution and granular audit logs made passing our SOC 2 Type II audit significantly less stressful.",
-    author: "Sarah Chen",
-    role: "Director of Platform Operations",
-    company: "PulseOps Tech",
-    initials: "SC"
+    quote: "I don't need to remember where everything is anymore.",
+    author: "Priya",
+    role: "Student",
+    initials: "P"
   }
 ];
 
-export const clientLogos = [
-  { name: 'KINETIX', symbol: '◈' },
-  { name: 'VERTEX LABS', symbol: '▲' },
-  { name: 'NORTHSCALE', symbol: '⬡' },
-  { name: 'SYNTHETIX', symbol: '◆' },
-  { name: 'PULSEOPS', symbol: '◉' },
-  { name: 'LAYERCRAFT', symbol: '■' }
-];
-
-export const platformMetrics = [
-  { value: '10,000+', label: 'Active teams & developers' },
-  { value: '99.99%', label: 'Platform uptime SLA' },
-  { value: '42%', label: 'Reduction in manual cycle time' },
-  { value: '< 25ms', label: 'Average queue trigger latency' }
+export const productMetrics = [
+  { value: '1 place', label: 'For your everyday tools' },
+  { value: '1 click', label: 'For common routines' },
+  { value: 'Less searching', label: 'More getting things done' }
 ];

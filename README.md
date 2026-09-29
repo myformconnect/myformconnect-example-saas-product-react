@@ -1,6 +1,6 @@
-# Vantage — SaaS Product Demo
+# Orevio — Desktop Utility App Website
 
-A clean, responsive B2B SaaS website built with React and Tailwind CSS. It comes pre-wired with working forms powered by [MyFormCapture](https://myformcapture.com).
+A fast, lightweight, and modern website for **Orevio**, a fictional desktop utility application designed to organize shortcuts, workflows, search, and repetitive tasks. Built with React, Vite, and Tailwind CSS, and pre-wired with working forms powered by [MyFormCapture](https://myformcapture.com) / [MyFormConnect](https://myformconnect.com).
 
 ## Running Locally
 
@@ -18,7 +18,7 @@ A clean, responsive B2B SaaS website built with React and Tailwind CSS. It comes
    ```
    *(Windows: `copy .env.example .env`)*
 
-   The `.env` file comes pre-filled with a working demo form ID, so forms work right away. You can swap in your own form ID from your MyFormCapture dashboard whenever you're ready.
+   The `.env` file comes pre-filled with working demo form URLs (`https://myformcapture.com/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`), so forms work out of the box. You can swap in your own form URLs (`MFC_CONTACT_FORM_URL`, `MFC_NEWSLETTER_FORM_URL`, `MFC_KEEP_INFORMED_FORM_URL`, etc.) from your MyFormCapture dashboard whenever you're ready.
 
 3. **Start the app**
    ```bash
@@ -32,4 +32,4 @@ A clean, responsive B2B SaaS website built with React and Tailwind CSS. It comes
 - **Tailwind CSS v4**
 - **React Router**
 - **Lucide Icons**
-- **MyFormCapture** (form handling)
+- **MyFormCapture** (form submission infrastructure)

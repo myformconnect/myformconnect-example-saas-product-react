@@ -1,56 +1,66 @@
 import React from 'react';
 import Button from '../common/Button';
 import ScrollReveal from '../common/ScrollReveal';
-import { ArrowRight, Check } from 'lucide-react';
+import { Download, ArrowRight, Check } from 'lucide-react';
 
 export default function FinalCTA() {
+  const handleDownload = () => {
+    alert('Thank you for trying Orevio! This is a demo product for simple desktop productivity.');
+  };
+
   return (
-    <section className="py-20 bg-transparent">
+    <section className="py-20 bg-transparent" id="download">
       <div className="container-custom">
         <ScrollReveal direction="up">
-          <div className="bg-stone-900 text-white rounded-3xl p-8 sm:p-14 text-center border border-stone-800 shadow-xl">
+          <div className="bg-slate-900 text-white rounded-2xl p-8 sm:p-14 text-center border border-slate-800 shadow-xl">
             <div className="max-w-xl mx-auto space-y-4">
+              <span className="text-xs font-semibold uppercase tracking-wider text-sky-400">
+                Get Started
+              </span>
+
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white tracking-tight">
-                Ready to simplify your workflow?
+                Less clicking. More doing.
               </h2>
 
-              <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-md mx-auto">
-                Start your 14-day free trial today, or schedule a quick walkthrough with our team.
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-md mx-auto">
+                Download Orevio for Windows or macOS. Set up your everyday shortcuts and routines in less than a minute.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-3">
                 <Button
-                  to="/contact"
+                  onClick={handleDownload}
                   variant="primary"
+                  size="lg"
+                  icon={Download}
+                  iconPosition="left"
+                  className="w-full sm:w-auto"
+                >
+                  Download Orevio
+                </Button>
+                <Button
+                  to="/features"
+                  variant="dark"
                   size="lg"
                   icon={ArrowRight}
                   iconPosition="right"
                   className="w-full sm:w-auto"
                 >
-                  Get Started
-                </Button>
-                <Button
-                  to="/contact"
-                  variant="dark"
-                  size="lg"
-                  className="w-full sm:w-auto"
-                >
-                  Book a Demo
+                  Explore Features
                 </Button>
               </div>
 
-              <div className="pt-5 flex flex-wrap items-center justify-center gap-5 text-xs text-stone-400">
+              <div className="pt-5 flex flex-wrap items-center justify-center gap-5 text-xs text-slate-400">
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-orange-400" />
-                  <span>14-day full trial</span>
+                  <Check className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Works on Windows & Mac</span>
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-orange-400" />
-                  <span>No credit card required</span>
+                  <Check className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Free forever plan available</span>
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-orange-400" />
-                  <span>Set up in 5 minutes</span>
+                  <Check className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Simple 1-minute setup</span>
                 </span>
               </div>
             </div>

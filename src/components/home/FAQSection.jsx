@@ -12,13 +12,13 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-stone-50/50 border-b border-stone-200/80">
+    <section className="py-20 bg-transparent border-b border-slate-200/80">
       <div className="container-custom max-w-3xl">
         <ScrollReveal direction="up">
           <SectionHeading
-            eyebrow="FAQ"
+            eyebrow="Questions & Answers"
             title="Frequently asked questions"
-            description="Clear answers to common questions about setup, billing, and security."
+            description="Clear, simple answers about how Orevio works and how to get started."
           />
         </ScrollReveal>
 
@@ -28,32 +28,32 @@ export default function FAQSection() {
             return (
               <ScrollReveal key={faq.question} direction="up" delay={idx * 50}>
                 <div
-                  className={`rounded-2xl border bg-white overflow-hidden transition-all duration-200 ${
-                    isOpen ? 'border-orange-300 shadow-xs' : 'border-stone-200 hover:border-stone-300'
+                  className={`rounded-xl border bg-white overflow-hidden transition-all duration-180 ${
+                    isOpen ? 'border-sky-300 shadow-xs' : 'border-slate-200 hover:border-slate-300'
                   }`}
                 >
                   <button
                     onClick={() => toggle(idx)}
-                    className="w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-medium text-stone-900 text-sm sm:text-base hover:text-orange-600 transition-colors cursor-pointer"
+                    className="w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-medium text-slate-900 text-sm sm:text-base hover:text-sky-600 transition-colors cursor-pointer"
                     aria-expanded={isOpen}
                   >
                     <span>{faq.question}</span>
                     <ChevronDown
-                      className={`w-4 h-4 text-stone-400 shrink-0 transition-transform duration-250 ease-out ${
-                        isOpen ? 'rotate-180 text-orange-600' : ''
+                      className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ease-out ${
+                        isOpen ? 'rotate-180 text-sky-600' : ''
                       }`}
                     />
                   </button>
 
                   <div
-                    className="grid transition-all duration-250 ease-out"
+                    className="grid transition-all duration-200 ease-out"
                     style={{
                       gridTemplateRows: isOpen ? '1fr' : '0fr',
                       opacity: isOpen ? 1 : 0,
                     }}
                   >
                     <div className="overflow-hidden">
-                      <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100">
+                      <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
                         {faq.answer}
                       </div>
                     </div>

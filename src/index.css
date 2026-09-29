@@ -16,47 +16,43 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #3f3f46;
-    background-color: #fcfbf9;
+    color: #475569;
+    background-color: #f8fafc;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #18181b;
+    color: #0f172a;
     font-weight: 600;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
   }
 
   ::selection {
-    background-color: #ea580c;
+    background-color: #0ea5e9;
     color: #ffffff;
   }
 }
 
 /* Custom restrained utility classes */
-.container-custom {
+@utility container-custom {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
 
-@media (min-width: 640px) {
-  .container-custom {
+  @media (min-width: 640px) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-}
 
-@media (min-width: 1024px) {
-  .container-custom {
+  @media (min-width: 1024px) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-/* Button & interactive refinements (Warm Orange Accent & Neutral Theme) */
+/* Button & interactive refinements (Orevio Sky Blue Theme, 8px radius) */
 .btn-base {
   display: inline-flex;
   align-items: center;
@@ -64,8 +60,8 @@
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  border-radius: 9999px;
-  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  border-radius: 8px;
+  transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
   outline: none;
   cursor: pointer;
   white-space: nowrap;
@@ -80,80 +76,79 @@
 }
 
 .btn-base:focus-visible {
-  outline: 2px solid #ea580c;
+  outline: 2px solid #0ea5e9;
   outline-offset: 2px;
 }
 
 .btn-primary {
-  background-color: #ea580c;
+  background-color: #0ea5e9;
   color: #ffffff;
-  border: 1px solid #ea580c;
-  box-shadow: 0 1px 2px 0 rgba(234, 88, 12, 0.2);
+  border: 1px solid #0ea5e9;
+  box-shadow: 0 1px 2px 0 rgba(14, 165, 233, 0.2);
 }
 .btn-primary:hover {
-  background-color: #c2410c;
-  border-color: #c2410c;
-  box-shadow: 0 4px 8px -1px rgba(234, 88, 12, 0.25);
+  background-color: #0284c7;
+  border-color: #0284c7;
+  box-shadow: 0 4px 10px -1px rgba(14, 165, 233, 0.25);
 }
 
 .btn-accent {
-  background-color: #ea580c;
+  background-color: #0ea5e9;
   color: #ffffff;
-  border: 1px solid #ea580c;
-  box-shadow: 0 1px 2px 0 rgba(234, 88, 12, 0.2);
+  border: 1px solid #0ea5e9;
+  box-shadow: 0 1px 2px 0 rgba(14, 165, 233, 0.2);
 }
 .btn-accent:hover {
-  background-color: #c2410c;
-  border-color: #c2410c;
-  box-shadow: 0 4px 8px -1px rgba(234, 88, 12, 0.25);
+  background-color: #0284c7;
+  border-color: #0284c7;
 }
 
 .btn-secondary {
   background-color: #ffffff;
-  color: #27272a;
-  border: 1px solid #e7e5e4;
-  box-shadow: 0 1px 2px 0 rgba(24, 24, 27, 0.03);
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
 }
 .btn-secondary:hover {
-  background-color: #fffaf5;
-  color: #c2410c;
-  border-color: #fed7aa;
-  box-shadow: 0 3px 6px -1px rgba(24, 24, 27, 0.06);
+  background-color: #f8fafc;
+  color: #0284c7;
+  border-color: #bae6fd;
+  box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.06);
 }
 
 .btn-ghost {
   background-color: transparent;
-  color: #52525b;
+  color: #475569;
   border: 1px solid transparent;
 }
 .btn-ghost:hover {
-  background-color: #f5f5f4;
-  color: #18181b;
+  background-color: #f1f5f9;
+  color: #0f172a;
 }
 
 /* Card & panel borders with subtle hover lift */
 .b2b-card {
   background-color: #ffffff;
-  border: 1px solid #e7e5e4;
-  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   box-shadow: var(--shadow-card);
-  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .b2b-card-interactive:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-card-hover);
-  border-color: #d6d3d1;
+  border-color: #cbd5e1;
 }
 
 /* Modern Input Focus State */
 input:focus, select:focus, textarea:focus {
   outline: none;
-  border-color: #ea580c !important;
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12) !important;
+  border-color: #0ea5e9 !important;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15) !important;
 }
 
-/* Badges */
+/* Badges (pills reserved for badges, labels, and shortcuts) */
 .b2b-badge {
   display: inline-flex;
   align-items: center;

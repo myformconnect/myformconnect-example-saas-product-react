@@ -1,55 +1,58 @@
 :root {
-  /* Brand: Deep Charcoal & Warm Orange / Amber */
-  --color-primary: #18181b;         /* Deep charcoal / almost-black */
-  --color-primary-hover: #27272a;
-  --color-primary-muted: #3f3f46;
+  /* Brand: Clean Slate & Calm Sky Blue */
+  --color-primary: #0F172A;         /* Main text & dark accents */
+  --color-primary-hover: #1E293B;
+  --color-primary-muted: #475569;   /* Secondary text */
 
-  --color-accent: #ea580c;          /* Warm vibrant orange (MyFormConnect inspired) */
-  --color-accent-hover: #c2410c;    /* Deep warm amber */
-  --color-accent-soft: #fff7ed;     /* Very light warm cream/orange */
-  --color-accent-border: #fed7aa;   /* Soft warm orange border */
-  --color-accent-secondary: #f59e0b;/* Muted warm yellow/gold */
+  /* Calm Sky Blue Accent Palette (10-20% visual weight) */
+  --color-accent: #0EA5E9;          /* Sky Blue Primary */
+  --color-accent-hover: #0284C7;    /* Sky Blue Hover */
+  --color-accent-dark: #0369A1;     /* Sky Blue Dark */
+  --color-accent-secondary: #38BDF8;/* Light Sky Accent */
+  --color-accent-soft: #E0F2FE;     /* Very light sky tint */
+  --color-accent-border: #BAE6FD;   /* Soft sky border */
+  --color-accent-very-soft: #F0F9FF;/* Ultra-soft sky background */
 
-  /* Backgrounds: Warm Off-White & Clean Neutrals */
-  --color-bg-page: #fcfbf9;         /* Warm off-white */
-  --color-bg-subtle: #f5f5f4;       /* Very light warm gray */
-  --color-bg-muted: #e7e5e4;        /* Soft warm stone divider */
-  --color-surface: #ffffff;         /* Pure white for cards */
+  /* Backgrounds: Clean Neutral Whites & Slates (80-90% visual weight) */
+  --color-bg-page: #F8FAFC;         /* Clean neutral page background */
+  --color-bg-subtle: #F1F5F9;       /* Slate subtle background */
+  --color-bg-muted: #E2E8F0;        /* Soft divider / muted background */
+  --color-surface: #FFFFFF;         /* Pure white surface for cards */
 
-  /* Text: High legibility charcoal & warm muted gray */
-  --color-text-heading: #18181b;
-  --color-text-body: #3f3f46;
-  --color-text-muted: #71717a;
-  --color-text-subtle: #a1a1aa;
+  /* Text: High-legibility Slate */
+  --color-text-heading: #0F172A;    /* Main heading text */
+  --color-text-body: #475569;       /* Secondary body text */
+  --color-text-muted: #64748B;      /* Muted helper text */
+  --color-text-subtle: #94A3B8;     /* Subtle icons & placeholders */
 
-  /* Borders: Soft warm stone */
-  --color-border: #e7e5e4;
-  --color-border-hover: #d6d3d1;
-  --color-border-strong: #a8a29e;
+  /* Borders: Hairline Slate */
+  --color-border: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+  --color-border-strong: #94A3B8;
 
-  /* Form & Status Tokens */
-  --color-success: #15803d;
-  --color-success-bg: #f0fdf4;
-  --color-success-border: #bbf7d0;
+  /* Form & Feedback Tokens */
+  --color-success: #16A34A;
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #BBF7D0;
 
-  --color-error: #dc2626;
-  --color-error-bg: #fef2f2;
-  --color-error-border: #fecaca;
+  --color-error: #DC2626;
+  --color-error-bg: #FEF2F2;
+  --color-error-border: #FECACA;
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  /* Moderate Radius System */
+  --radius-sm: 8px;                 /* Inputs & buttons */
+  --radius-md: 12px;                /* Cards */
+  --radius-lg: 16px;                /* Large panels & desktop window */
   --radius-xl: 20px;
-  --radius-2xl: 24px;
+  --radius-full: 9999px;            /* Badges & status pills only */
 
-  /* Restrained SaaS Shadow Hierarchy */
-  --shadow-xs: 0 1px 2px 0 rgba(24, 24, 27, 0.03);
-  --shadow-card: 0 1px 3px 0 rgba(24, 24, 27, 0.04), 0 1px 2px -1px rgba(24, 24, 27, 0.02);
-  --shadow-card-hover: 0 12px 28px -6px rgba(24, 24, 27, 0.08), 0 6px 12px -4px rgba(24, 24, 27, 0.04);
-  --shadow-hero: 0 25px 60px -15px rgba(24, 24, 27, 0.09), 0 10px 20px -8px rgba(24, 24, 27, 0.04);
-  --shadow-hero-hover: 0 32px 70px -15px rgba(24, 24, 27, 0.13), 0 12px 24px -8px rgba(24, 24, 27, 0.05);
+  /* Subtle Modern Shadow Hierarchy */
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 10px 24px -8px rgba(15, 23, 42, 0.10);
+  --shadow-hero: 0 25px 60px -15px rgba(15, 23, 42, 0.12);
 }

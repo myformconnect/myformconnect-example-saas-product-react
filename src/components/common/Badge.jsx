@@ -6,7 +6,7 @@ export default function Badge({
   size = 'sm',
   className = '',
   dot = false,
-  dotColor = 'bg-orange-600',
+  dotColor = 'bg-sky-600',
 }) {
   const sizeStyles = {
     sm: 'text-xs px-2.5 py-0.5 rounded-full',
@@ -14,13 +14,14 @@ export default function Badge({
   };
 
   const variantStyles = {
-    neutral: 'bg-stone-100 text-stone-700 border border-stone-200',
-    orange: 'bg-orange-50 text-orange-800 border border-orange-200/70',
-    blue: 'bg-orange-50 text-orange-800 border border-orange-200/70',
-    accent: 'bg-orange-50 text-orange-800 border border-orange-200/70',
+    neutral: 'bg-slate-100 text-slate-700 border border-slate-200',
+    sky: 'bg-sky-50 text-sky-800 border border-sky-200/70',
+    blue: 'bg-sky-50 text-sky-800 border border-sky-200/70',
+    accent: 'bg-sky-50 text-sky-800 border border-sky-200/70',
+    indigo: 'bg-sky-50 text-sky-800 border border-sky-200/70', // backwards compatibility alias
     green: 'bg-emerald-50 text-emerald-700 border border-emerald-200',
     amber: 'bg-amber-50 text-amber-800 border border-amber-200',
-    navy: 'bg-stone-900 text-white border border-stone-900',
+    navy: 'bg-slate-900 text-white border border-slate-900',
   };
 
   return (

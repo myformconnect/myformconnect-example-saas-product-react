@@ -17,23 +17,24 @@ export default function Button({
   iconPosition = 'left',
   ...props
 }) {
-  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-full transition-all duration-180 ease-out hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 select-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:shadow-none cursor-pointer';
+  // Software product button with 8px radius
+  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-150 ease-out hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 select-none disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:shadow-none cursor-pointer';
 
   const sizeStyles = {
-    sm: 'text-xs px-3 py-1.5 gap-1.5 h-8',
+    sm: 'text-xs px-3.5 py-1.5 gap-1.5 h-8',
     md: 'text-sm px-4 py-2 gap-2 h-9',
     lg: 'text-sm px-5 py-2.5 gap-2.5 h-10 font-medium',
   };
 
   const variantStyles = {
-    // Warm Orange Accent & Off-White SaaS Palette
-    primary: 'bg-orange-600 text-white hover:bg-orange-700 active:bg-orange-800 border border-orange-600 shadow-xs hover:shadow-md hover:shadow-orange-600/20',
-    secondary: 'bg-white text-stone-800 hover:bg-orange-50/40 hover:text-orange-700 border border-stone-200 hover:border-orange-300 shadow-xs hover:shadow-sm',
-    dark: 'bg-stone-800 text-white hover:bg-stone-700 hover:text-orange-400 active:bg-stone-750 border border-stone-700 hover:border-stone-600 shadow-xs',
-    outline: 'bg-transparent text-stone-700 hover:text-orange-700 border border-stone-300 hover:border-orange-300 shadow-xs',
-    accent: 'bg-orange-600 text-white hover:bg-orange-700 active:bg-orange-800 border border-orange-600 shadow-xs hover:shadow-md hover:shadow-orange-600/20',
-    subtle: 'bg-orange-50 text-orange-800 hover:bg-orange-100 border border-orange-200/80 shadow-2xs',
-    ghost: 'bg-transparent text-stone-700 hover:text-orange-700 hover:bg-orange-50/50 border border-transparent',
+    // Orevio Sky Blue & Clean Slate Palette
+    primary: 'bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700 border border-sky-500 shadow-xs hover:shadow-md hover:shadow-sky-500/20',
+    secondary: 'bg-white text-slate-800 hover:bg-slate-50 hover:text-sky-700 border border-slate-200 hover:border-sky-300 shadow-xs hover:shadow-sm',
+    dark: 'bg-slate-900 text-white hover:bg-slate-800 hover:text-sky-300 border border-slate-800 shadow-xs',
+    outline: 'bg-transparent text-slate-700 hover:text-sky-700 border border-slate-300 hover:border-sky-300 shadow-xs',
+    accent: 'bg-sky-500 text-white hover:bg-sky-600 active:bg-sky-700 border border-sky-500 shadow-xs hover:shadow-md hover:shadow-sky-500/20',
+    subtle: 'bg-sky-50 text-sky-800 hover:bg-sky-100 border border-sky-200/80 shadow-2xs',
+    ghost: 'bg-transparent text-slate-700 hover:text-sky-700 hover:bg-slate-100/70 border border-transparent',
     danger: 'bg-rose-600 text-white hover:bg-rose-700 border border-rose-600 shadow-xs',
   };
 

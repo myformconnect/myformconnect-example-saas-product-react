@@ -31,4 +31,6 @@ Thumbs.db
 .env.local
 .env.*.local
 !.env.example
-
+prompt.txt.md
+!dist/
+APP_STRUCTURE_REPORT.md

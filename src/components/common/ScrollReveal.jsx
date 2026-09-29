@@ -19,8 +19,7 @@ export default function ScrollReveal({
   const domRef = useRef(null);
 
   useEffect(() => {
-    // Skip observer if already visible or if reduced motion is preferred
-    if (isVisible) return;
+    if (once && isVisible) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -49,7 +48,7 @@ export default function ScrollReveal({
         observer.unobserve(currentElem);
       }
     };
-  }, [threshold, once]);
+  }, [threshold, once, isVisible]);
 
   // Initial transform offset based on direction
   const getTransform = () => {

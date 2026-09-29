@@ -1,110 +1,107 @@
 export const keyFeatures = [
   {
-    id: 'automation',
-    title: 'Workflow Automation',
-    description: 'Trigger asynchronous jobs, sync records across business systems, and eliminate routine operational handoffs.',
-    icon: 'GitFork',
-    tag: 'Core Engine'
+    id: 'quick-access',
+    title: 'Quick Access',
+    description: 'Open your favorite apps, files, and folders without searching through menus.',
+    icon: 'Folder',
+    tag: 'Instant'
   },
   {
-    id: 'analytics',
-    title: 'Analytics & Reporting',
-    description: 'Inspect live queue latency, team throughput metrics, and pipeline efficiency via structured dashboards.',
-    icon: 'BarChart3',
-    tag: 'Real-time'
+    id: 'find-anything',
+    title: 'Find Anything',
+    description: 'Search for files, apps, and saved items from one simple search box.',
+    icon: 'Search',
+    tag: 'Simple Search'
   },
   {
-    id: 'collaboration',
-    title: 'Team Collaboration',
-    description: 'Centralized workspace with inline activity threads, role-based comments, and contextual notifications.',
-    icon: 'Users',
-    tag: 'Coordination'
+    id: 'keep-useful-things-close',
+    title: 'Keep Useful Things Close',
+    description: 'Save the shortcuts and items you use most so they\'re always easy to reach.',
+    icon: 'Star',
+    tag: 'Favorites'
   },
   {
-    id: 'integrations',
-    title: 'Enterprise Integrations',
-    description: 'Connect native webhooks and pre-built connectors for Slack, GitHub, Jira, Salesforce, and Snowflake.',
-    icon: 'Blocks',
-    tag: '50+ Apps'
+    id: 'simple-routines',
+    title: 'Simple Routines',
+    description: 'Group a few everyday actions together and start them with one click.',
+    icon: 'Zap',
+    tag: 'One Click'
   },
   {
-    id: 'security',
-    title: 'Security & Governance',
-    description: 'Granular RBAC, audit logging, SSO via SAML/Okta, and SOC 2 Type II compliant data isolation.',
-    icon: 'ShieldCheck',
-    tag: 'Enterprise'
+    id: 'stay-organized',
+    title: 'Stay Organized',
+    description: 'Keep different parts of your work organized in separate spaces.',
+    icon: 'LayoutGrid',
+    tag: 'Spaces'
   },
   {
-    id: 'custom-workflows',
-    title: 'Custom Logic & Rules',
-    description: 'Define branching conditions, multi-stage approval flows, and customized validation checks effortlessly.',
-    icon: 'SlidersHorizontal',
-    tag: 'Configurable'
+    id: 'clipboard-history',
+    title: 'Clipboard History',
+    description: 'Quickly find something you copied earlier instead of copying it again.',
+    icon: 'Clipboard',
+    tag: 'Clipboard'
   },
 ];
 
-export const coreCapabilities = [
+export const featureGroups = [
   {
-    title: 'Workflow Automation',
-    desc: 'Event-driven triggers, conditional routing, and automated retries with detailed execution traces.',
-    badge: 'Automation'
+    id: 'find-things-faster',
+    title: 'Find things faster',
+    badge: 'Everyday Search',
+    description: 'Open a clean search bar whenever you need it. Type a word or two to find any file, open any app, or jump directly to your saved shortcuts.',
+    highlights: ['One simple search box', 'Finds files, folders, and apps instantly', 'No complex commands needed']
   },
   {
-    title: 'Operational Analytics',
-    desc: 'Measure turnaround cycles, pipeline bottlenecks, and daily SLA compliance across teams.',
-    badge: 'Analytics'
+    id: 'keep-favorites-close',
+    title: 'Keep your favorites close',
+    badge: 'Favorites',
+    description: 'Pin the apps, spreadsheets, links, and documents you open every single day right to your Orevio window.',
+    highlights: ['Pin apps, folders, and files', 'Drag and drop to rearrange', 'Always one shortcut away']
   },
   {
-    title: 'Collaborative Workspaces',
-    desc: 'Shared inbox, team assignment rules, and unified activity logs to keep stakeholders aligned.',
-    badge: 'Collaboration'
+    id: 'create-simple-routines',
+    title: 'Create simple routines',
+    badge: 'Routines',
+    description: 'Group a few actions together into a routine. Open your morning email, calendar, and music playlist at the same time with a single click.',
+    highlights: ['Group everyday actions together', 'Start your work day in one click', 'Simple setup with no programming']
   },
   {
-    title: 'Native Connectors',
-    desc: 'Bi-directional sync with standard CRMs, issue trackers, data warehouses, and custom webhooks.',
-    badge: 'Ecosystem'
+    id: 'organize-your-work',
+    title: 'Organize your work',
+    badge: 'Organization',
+    description: 'Keep files and tools tidy without creating clutter. Orevio makes it easy to keep your most-used items neatly categorized.',
+    highlights: ['Neat visual categories', 'Quick shortcuts to key folders', 'Less searching through buried subfolders']
   },
   {
-    title: 'Executive Reporting',
-    desc: 'Exportable audit trails, scheduled CSV/PDF summaries, and queryable event streams.',
-    badge: 'Reporting'
+    id: 'remember-copied-items',
+    title: 'Remember copied items',
+    badge: 'Clipboard',
+    description: 'Ever copy something and accidentally overwrite it? Orevio keeps recent links, copied text, and notes right at your fingertips.',
+    highlights: ['Quickly browse recently copied text', 'Paste previous items easily', 'Clear history anytime']
   },
   {
-    title: 'Granular Permissions',
-    desc: 'Role-based access controls, environment scoping (Dev/Staging/Prod), and IP allowlists.',
-    badge: 'Governance'
+    id: 'switch-between-spaces',
+    title: 'Switch between spaces',
+    badge: 'Workspaces',
+    description: 'Separate your study notes from your personal projects and work tools. Switch spaces whenever you shift tasks.',
+    highlights: ['Dedicated spaces for Work, Study, or Personal', 'Keep relevant apps grouped together', 'Simple one-click switching']
   }
-];
-
-export const integrationsList = [
-  { name: 'Slack', category: 'Communication', desc: 'Real-time pipeline alerts and approval buttons.' },
-  { name: 'GitHub', category: 'Engineering', desc: 'Sync pull requests, deployments, and commit hashes.' },
-  { name: 'Jira Software', category: 'Project Management', desc: 'Automate sprint tickets and status progression.' },
-  { name: 'Salesforce', category: 'CRM', desc: 'Two-way lead status sync and revenue pipeline mapping.' },
-  { name: 'Snowflake', category: 'Data Warehouse', desc: 'Continuous event streaming and analytical warehousing.' },
-  { name: 'Google Workspace', category: 'Productivity', desc: 'SSO identity sync, Drive exports, and Sheets updates.' },
-  { name: 'AWS S3 & EventBridge', category: 'Infrastructure', desc: 'Archive payload events and trigger Lambda workers.' },
-  { name: 'HubSpot', category: 'Marketing', desc: 'Customer lifecycle triggers and form submission routing.' },
-  { name: 'Linear', category: 'Engineering', desc: 'Bi-directional issue sync and roadmapping.' },
-  { name: 'Notion', category: 'Documentation', desc: 'Automated workspace digests and knowledge sync.' },
-  { name: 'Datadog', category: 'Observability', desc: 'Error rate thresholds and SLA breach alarms.' },
-  { name: 'Custom Webhooks', category: 'Developer API', desc: 'Sign payloads with HMAC-SHA256 and deliver reliably.' }
 ];
 
 export const howItWorksSteps = [
   {
     step: '01',
-    title: 'Connect your workflow',
-    description: 'Link your existing databases, message queues, and SaaS tools using secure API keys or OAuth connectors in minutes.'
+    title: 'Add the things you use',
+    description: 'Add your favorite apps, important files, folders, and everyday shortcuts to Orevio.'
   },
   {
     step: '02',
-    title: 'Configure your workspace',
-    description: 'Set up custom pipeline stages, validation schema, automated routing rules, and team permission tiers.'
+    title: 'Create simple routines',
+    description: 'Group common everyday actions together so you can start them all with a single click.'
   },
   {
     step: '03',
-    title: 'Start getting results',
-    description: 'Monitor live activity, audit operational health, and eliminate repetitive manual bottlenecks across your organization.'
+    title: 'Get things done faster',
+    description: 'Find, open, and start what you need from one friendly place without jumping through menus.'
   }
 ];

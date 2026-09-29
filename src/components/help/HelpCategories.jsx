@@ -1,11 +1,11 @@
 import React from 'react';
 import ScrollReveal from '../common/ScrollReveal';
 import { 
-  Rocket, 
-  Cpu, 
-  CreditCard, 
-  Cable, 
-  Shield, 
+  Download, 
+  AppWindow, 
+  Search, 
+  Star, 
+  Zap, 
   HelpCircle, 
   ArrowRight,
   FileText 
@@ -13,11 +13,11 @@ import {
 import { helpCategories } from '../../data/helpData';
 
 const iconMap = {
-  Rocket,
-  Cpu,
-  CreditCard,
-  Cable,
-  Shield,
+  Download,
+  AppWindow,
+  Search,
+  Star,
+  Zap,
   HelpCircle
 };
 
@@ -40,19 +40,19 @@ export default function HelpCategories({ searchQuery, onSelectArticle }) {
     : helpCategories;
 
   return (
-    <section className="py-16 bg-white border-b border-stone-200">
+    <section className="py-16 bg-white border-b border-slate-200">
       <div className="container-custom">
         {isSearching && (
-          <div className="mb-8 text-xs text-stone-500 font-mono">
+          <div className="mb-8 text-xs text-slate-500">
             Showing results for &quot;<strong className="text-slate-800">{searchQuery}</strong>&quot; ({
               filteredCategories.reduce((acc, cat) => acc + cat.articles.length, 0)
-            } articles found)
+            } guides found)
           </div>
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCategories.map((cat, i) => {
-            const Icon = iconMap[cat.icon] || Rocket;
+            const Icon = iconMap[cat.icon] || HelpCircle;
             return (
               <ScrollReveal
                 key={cat.id}
@@ -60,16 +60,16 @@ export default function HelpCategories({ searchQuery, onSelectArticle }) {
                 className="flex"
               >
                 <div
-                  className="w-full b2b-card b2b-card-interactive rounded-2xl p-6 bg-white flex flex-col justify-between"
+                  className="w-full b2b-card b2b-card-interactive rounded-xl p-6 bg-white flex flex-col justify-between hover:border-sky-300 transition-all duration-180"
                 >
                   <div>
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="w-9 h-9 rounded-xl bg-stone-100 text-stone-800 flex items-center justify-center border border-stone-200/60">
-                        <Icon className="w-4 h-4 text-stone-700" />
+                      <div className="w-9 h-9 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center border border-sky-100">
+                        <Icon className="w-4 h-4 text-sky-600" />
                       </div>
                       <div>
                         <h3 className="text-sm font-semibold text-slate-900">{cat.title}</h3>
-                        <span className="text-[11px] text-stone-400 font-mono">{cat.articles.length} guides</span>
+                        <span className="text-[11px] text-slate-400">{cat.articles.length} guides</span>
                       </div>
                     </div>
 
@@ -77,19 +77,19 @@ export default function HelpCategories({ searchQuery, onSelectArticle }) {
                       {cat.description}
                     </p>
 
-                    <ul className="space-y-2.5">
+                    <ul className="space-y-2">
                       {cat.articles.map((article) => (
                         <li key={article.id}>
                           <button
                             type="button"
                             onClick={() => onSelectArticle(article)}
-                            className="w-full text-left flex items-center justify-between gap-2 text-xs text-slate-700 hover:text-orange-600 transition-colors py-1 group cursor-pointer"
+                            className="w-full text-left flex items-center justify-between gap-2 text-xs text-slate-700 hover:text-sky-600 transition-colors py-1 group cursor-pointer"
                           >
                             <div className="flex items-center gap-2 truncate">
-                              <FileText className="w-3.5 h-3.5 text-stone-400 group-hover:text-orange-600 shrink-0" />
+                              <FileText className="w-3.5 h-3.5 text-slate-400 group-hover:text-sky-600 shrink-0" />
                               <span className="truncate">{article.title}</span>
                             </div>
-                            <span className="text-[10px] text-stone-400 font-mono shrink-0">
+                            <span className="text-[10px] text-slate-400 shrink-0">
                               {article.reads}
                             </span>
                           </button>
@@ -98,9 +98,9 @@ export default function HelpCategories({ searchQuery, onSelectArticle }) {
                     </ul>
                   </div>
 
-                  <div className="mt-6 pt-3 border-t border-stone-100">
-                    <span className="text-[11px] font-medium text-orange-600 hover:text-orange-700 flex items-center gap-1">
-                      <span>Explore topic</span>
+                  <div className="mt-6 pt-3 border-t border-slate-100">
+                    <span className="text-[11px] font-medium text-sky-600 hover:text-sky-700 flex items-center gap-1">
+                      <span>View guides</span>
                       <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
@@ -111,10 +111,10 @@ export default function HelpCategories({ searchQuery, onSelectArticle }) {
         </div>
 
         {filteredCategories.length === 0 && (
-          <div className="text-center py-12 b2b-card p-8 bg-stone-50">
-            <p className="text-sm font-medium text-slate-800">No articles matched your query.</p>
+          <div className="text-center py-12 b2b-card p-8 bg-slate-50 rounded-xl">
+            <p className="text-sm font-medium text-slate-800">No guides matched your query.</p>
             <p className="text-xs text-slate-500 mt-1">
-              Try searching for &quot;webhooks&quot;, &quot;tokens&quot;, or scroll below to open a ticket directly with our technical team.
+              Try searching for &quot;apps&quot;, &quot;routines&quot;, or scroll below to contact support.
             </p>
           </div>
         )}

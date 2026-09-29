@@ -11,7 +11,7 @@ export default function TestimonialsSection() {
           <SectionHeading
             eyebrow="User Stories"
             title="Loved by everyday computer users."
-            description="See how freelancers, designers, and students simplify their daily routines with Orevio."
+            description="See how freelancers, designers, and students simplify their daily routines with Avorio."
           />
         </ScrollReveal>
 

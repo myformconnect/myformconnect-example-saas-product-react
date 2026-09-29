@@ -1,6 +1,6 @@
 export const testimonials = [
   {
-    quote: "Orevio makes my morning setup much easier. I open everything I need without jumping between folders.",
+    quote: "Avorio makes my morning setup much easier. I open everything I need without jumping between folders.",
     author: "Maya",
     role: "Freelancer",
     initials: "M"

@@ -63,12 +63,12 @@ export const pricingPlans = [
 
 export const pricingFaqs = [
   {
-    q: 'What is Orevio?',
-    a: 'Orevio is a simple desktop helper that brings your favorite apps, files, shortcuts, and everyday routines into one friendly place.'
+    q: 'What is Avorio?',
+    a: 'Avorio is a simple desktop helper that brings your favorite apps, files, shortcuts, and everyday routines into one friendly place.'
   },
   {
-    q: 'Which computers can run Orevio?',
-    a: 'Orevio runs smoothly on both Windows 10/11 and macOS computers.'
+    q: 'Which computers can run Avorio?',
+    a: 'Avorio runs smoothly on both Windows 10/11 and macOS computers.'
   },
   {
     q: 'Is there a free version?',

@@ -34,7 +34,7 @@ export default function ProductOverview() {
           <SectionHeading
             eyebrow="A Simple Helper"
             title="Everything you use, right where you need it."
-            description="Orevio gives you one simple place to find your apps, files, shortcuts, and everyday routines."
+            description="Avorio gives you one simple place to find your apps, files, shortcuts, and everyday routines."
           />
         </ScrollReveal>
 

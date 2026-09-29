@@ -11,7 +11,7 @@ export default function HelpPanel({ isOpen, onClose, onOpenFeedback }) {
   const quickFaqs = [
     {
       q: 'How do I add an app or file?',
-      a: 'Drag any application or document into Orevio or click "+ Add" in your workspace to pin it for quick access.'
+      a: 'Drag any application or document into Avorio or click "+ Add" in your workspace to pin it for quick access.'
     },
     {
       q: 'How do I find something quickly?',
@@ -23,7 +23,7 @@ export default function HelpPanel({ isOpen, onClose, onOpenFeedback }) {
     },
     {
       q: 'How do I view something I copied earlier?',
-      a: 'Open Orevio and check the Clipboard section to find and paste recent copied items, links, or notes.'
+      a: 'Open Avorio and check the Clipboard section to find and paste recent copied items, links, or notes.'
     }
   ];
 

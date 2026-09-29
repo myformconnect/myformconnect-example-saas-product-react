@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-2">
               <span className="font-semibold text-base sm:text-lg tracking-tight text-slate-900">
-                Orevio
+                Avorio
               </span>
             </div>
           </Link>
@@ -157,7 +157,7 @@ export default function Navbar() {
               className="w-full justify-center"
               icon={Download}
             >
-              Download Orevio
+              Download Avorio
             </Button>
           </div>
         </div>

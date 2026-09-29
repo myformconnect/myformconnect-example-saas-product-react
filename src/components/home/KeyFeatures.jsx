@@ -27,7 +27,7 @@ export default function KeyFeatures() {
         <ScrollReveal direction="up">
           <SectionHeading
             eyebrow="Everyday Features"
-            title="Six simple ways Orevio makes your day easier."
+            title="Six simple ways Avorio makes your day easier."
             description="Designed for normal computer users — clean, friendly, and always one quick shortcut away."
           />
         </ScrollReveal>

@@ -31,7 +31,7 @@ export default function ContactDetails() {
           Have a question?
         </h1>
         <p className="mt-3 text-base text-slate-600 leading-relaxed font-normal">
-          Want to see how Orevio could work for your team? Talk to us.
+          Want to see how Avorio could work for your team? Talk to us.
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export default function ContactDetails() {
       <div className="pt-6 border-t border-slate-200 space-y-3">
         <div className="flex items-center gap-2.5 text-xs text-slate-600">
           <Mail className="w-4 h-4 text-sky-600" />
-          <span>Email our team directly at <strong className="text-slate-900 font-semibold">team@orevioapp.example</strong></span>
+          <span>Email our team directly at <strong className="text-slate-900 font-semibold">team@avorioapp.example</strong></span>
         </div>
         <div className="flex items-center gap-2.5 text-xs text-slate-500">
           <CheckCircle2 className="w-4 h-4 text-emerald-600" />

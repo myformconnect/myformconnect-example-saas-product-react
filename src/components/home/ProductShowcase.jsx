@@ -31,7 +31,7 @@ export default function ProductShowcase() {
                 Search for an app or file in seconds.
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mt-2">
-                No more clicking through multiple folders or looking across different windows. Type a few letters and Orevio brings the right item right to you.
+                No more clicking through multiple folders or looking across different windows. Type a few letters and Avorio brings the right item right to you.
               </p>
 
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 pt-2">
@@ -193,7 +193,7 @@ export default function ProductShowcase() {
                 Start a group of actions with one click.
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal mt-2">
-                Instead of manually clicking to open four different things every morning, save them as a routine. Click once, and Orevio opens everything for you.
+                Instead of manually clicking to open four different things every morning, save them as a routine. Click once, and Avorio opens everything for you.
               </p>
 
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 pt-2">

@@ -47,6 +47,6 @@ export const desktopAppMock = {
     { id: 'cb-1', content: 'https://meet.google.com/abc-xyz-123', label: 'Meeting link', time: '5m ago' },
     { id: 'cb-2', content: '742 Evergreen Terrace, Springfield', label: 'Delivery address', time: '20m ago' },
     { id: 'cb-3', content: 'Don\'t forget to send the updated slide deck before 3 PM', label: 'Quick note', time: '1h ago' },
-    { id: 'cb-4', content: 'hello@orevioapp.example', label: 'Email address', time: '2h ago' },
+    { id: 'cb-4', content: 'hello@avorioapp.example', label: 'Email address', time: '2h ago' },
   ],
 };

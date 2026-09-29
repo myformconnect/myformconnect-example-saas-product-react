@@ -77,7 +77,7 @@ export default function DemoQuickForm({ onSuccess, onNavigateSchedule: _onNaviga
       if (onSuccess) onSuccess();
     } catch {
       setStatus('error');
-      setServerError('Unable to send request. Please try again or email team@orevioapp.example.');
+      setServerError('Unable to send request. Please try again or email team@avorioapp.example.');
     }
   };
 

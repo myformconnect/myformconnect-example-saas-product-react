@@ -38,7 +38,7 @@ export default function Footer() {
                 <Compass className="w-4 h-4 text-sky-400" />
               </div>
               <span className="font-semibold text-base tracking-tight text-slate-900">
-                Orevio
+                Avorio
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-500 max-w-sm leading-relaxed">
@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="lg:col-span-6 flex flex-col justify-center">
             <div className="max-w-md lg:ml-auto w-full">
               <p className="text-xs font-semibold text-slate-900 mb-2">
-                Get occasional Orevio updates.
+                Get occasional Avorio updates.
               </p>
               <NewsletterForm />
             </div>
@@ -121,7 +121,7 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright & Socials */}
         <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {currentYear} Orevio. Fictional desktop utility platform.</p>
+          <p>© {currentYear} Avorio. Fictional desktop utility platform.</p>
 
           <div className="flex items-center gap-4 text-slate-400">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-slate-700 transition-colors">

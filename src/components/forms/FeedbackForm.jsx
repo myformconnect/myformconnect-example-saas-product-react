@@ -133,7 +133,7 @@ export default function FeedbackForm({ onSuccess, onCancel, className = '' }) {
         </div>
         <h4 className="text-base font-semibold text-slate-900">Thank you for your feedback!</h4>
         <p className="text-xs text-slate-600 max-w-sm mx-auto leading-relaxed">
-          We read every note. Your suggestions help us make Orevio simpler and friendlier for everyone.
+          We read every note. Your suggestions help us make Avorio simpler and friendlier for everyone.
         </p>
         <div className="pt-2">
           <Button
@@ -162,7 +162,7 @@ export default function FeedbackForm({ onSuccess, onCancel, className = '' }) {
       {/* Star Rating */}
       <div>
         <label className="block font-semibold text-slate-700 mb-1.5">
-          How is your experience with Orevio?
+          How is your experience with Avorio?
         </label>
         <div className="flex items-center gap-1.5">
           {[1, 2, 3, 4, 5].map((star) => (

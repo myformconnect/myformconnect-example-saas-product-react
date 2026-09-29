@@ -1,6 +1,6 @@
-# Orevio — Desktop Utility App Website
+# Avorio — Desktop Utility App Website
 
-A fast, lightweight, and modern website for **Orevio**, a fictional desktop utility application designed to organize shortcuts, workflows, search, and repetitive tasks. Built with React, Vite, and Tailwind CSS, and pre-wired with working forms powered by [MyFormCapture](https://myformcapture.com) / [MyFormConnect](https://myformconnect.com).
+A fast, lightweight, and modern website for **Avorio**, a fictional desktop utility application designed to organize shortcuts, workflows, search, and repetitive tasks. Built with React, Vite, and Tailwind CSS, and pre-wired with working forms powered by [MyFormCapture](https://myformcapture.com) / [MyFormConnect](https://myformconnect.com).
 
 ## Running Locally
 

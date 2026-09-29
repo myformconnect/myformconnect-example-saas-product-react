@@ -20,7 +20,7 @@ export default function ScheduleCallForm({ className = '' }) {
     name: '',
     email: '',
     company: '',
-    topic: 'Orevio Desktop Walkthrough & Setup',
+    topic: 'Avorio Desktop Walkthrough & Setup',
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -333,7 +333,7 @@ export default function ScheduleCallForm({ className = '' }) {
               size="sm"
               onClick={() => {
                 setStep(1);
-                setAttendee({ name: '', email: '', company: '', topic: 'Orevio Desktop Walkthrough & Setup' });
+                setAttendee({ name: '', email: '', company: '', topic: 'Avorio Desktop Walkthrough & Setup' });
               }}
             >
               Book Another Meeting

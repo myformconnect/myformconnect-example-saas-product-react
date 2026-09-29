@@ -18,7 +18,7 @@ export default function FAQSection() {
           <SectionHeading
             eyebrow="Questions & Answers"
             title="Frequently asked questions"
-            description="Clear, simple answers about how Orevio works and how to get started."
+            description="Clear, simple answers about how Avorio works and how to get started."
           />
         </ScrollReveal>
 

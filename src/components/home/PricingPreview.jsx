@@ -21,7 +21,7 @@ export default function PricingPreview() {
           <SectionHeading
             eyebrow="Simple Pricing"
             title="Free for everyday shortcuts. Pro for unlimited routines."
-            description="Download Orevio for free today. Upgrade when you need unlimited routines and multiple spaces."
+            description="Download Avorio for free today. Upgrade when you need unlimited routines and multiple spaces."
           />
         </ScrollReveal>
 

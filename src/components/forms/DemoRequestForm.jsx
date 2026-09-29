@@ -88,7 +88,7 @@ export default function DemoRequestForm({ onSuccess, className = '' }) {
       if (onSuccess) onSuccess();
     } catch {
       setStatus('error');
-      setServerError('Unable to submit demo request right now. Please try again or reach out to team@orevioapp.example.');
+      setServerError('Unable to submit demo request right now. Please try again or reach out to team@avorioapp.example.');
     }
   };
 

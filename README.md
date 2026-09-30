@@ -26,6 +26,11 @@ A fast, lightweight, and modern website for **Orevio**, a fictional desktop util
    ```
    Visit **http://localhost:5173** to see it live.
 
+## Form Integration Guide
+
+Looking to add working contact, career, or newsletter forms to your own React project in under 10 minutes without touching backend servers? 
+Check out our step-by-step **[React Form Integration Guide](REACT_INTEGRATION_GUIDE.md)** for beginner-friendly, copy-paste ready components.
+
 ## Built With
 
 - **React 19** & **Vite**

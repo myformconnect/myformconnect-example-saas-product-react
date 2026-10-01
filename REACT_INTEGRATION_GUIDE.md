@@ -1,47 +1,42 @@
-# React Form Integration Guide — MyFormCapture (MFC)
+# React Form Integration Guide — MyFormConnect (MFC)
 
-> A complete, beginner-friendly guide to adding working forms to any React application in under 10 minutes. No backend, no server routes, and no email services required.
-
----
-
-| **Setup Time** | **Difficulty** | **Compatibility** | **Backend Setup** |
-| :--- | :--- | :--- | :--- |
-| **5 – 10 minutes** | **Beginner / Easy** | React 17+, React 18, React 19, Vite, CRA, Next.js | **Zero (Serverless)** |
+> A complete, beginner-friendly guide to adding working forms to any React application/website in under 10 minutes. No backend, no server routes, and no email services required.
 
 ---
 
 ## Overview
 
-[MyFormCapture](https://myformcapture.com) allows you to collect form submissions directly from your front-end React website. You create a form in your dashboard, copy the unique Form URL, and paste it directly into your React component. 
+[MyFormConnect](https://myformconnect.io) lets you collect form submissions directly from your React application/website without setting up a backend, managing a database, or configuring email services. You simply create a form in your dashboard, copy your unique Form Action URL, and paste it into your component — MyFormConnect takes care of submission routing, spam filtering, and honeypot protection automatically.
 
 When a user submits:
-1. The submission is captured instantly.
-2. Email notifications and lead records are automatically handled by MyFormCapture.
-3. Your React page displays an inline success message without redirecting away.
+1. The submission is captured instantly, with built-in spam and honeypot checks filtering out automated bots.
+2. Responses are saved securely in your dashboard, and an email notification is sent to you immediately.
+3. Your React page displays a smooth, inline confirmation message without reloading or redirecting away.
 
 ---
 
 ## Prerequisites
 
 Before starting, make sure you have:
-- [x] A **MyFormCapture account** — [Sign up here (Free)](https://myformcapture.com/users/sign_up)
-- [x] A form created in your [MyFormCapture Dashboard](https://myformcapture.com)
-- [x] Your unique **Form Endpoint URL** (e.g. `https://myformcapture.com/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`)
-- [x] Any existing React project (Vite, Next.js, Create React App, etc.)
+- A **MyFormConnect account** — [Sign up here (Free)](https://myformconnect.io/users/sign_up)
+- A form created in your [MyFormConnect Dashboard](https://myformconnect.io/account/)
+- Your unique **FORM ACTION URL** (e.g. `https://myformconnect.io/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`)
+- Any existing React project (Vite, Next.js, Create React App, etc.)
 
 ---
 
 ## 3-Step Quick Start
 
-### Step 1: Copy Your Form URL from MyFormCapture
+### Step 1: Copy Your Form URL from MyFormConnect
 
-1. Log in to your **[MyFormCapture Dashboard](https://myformcapture.com)**.
-2. Click **Create Form** (or open an existing form).
-3. Copy the **Endpoint URL** provided for your form. It looks like this:
+1. Log in to your **[MyFormConnect Dashboard](https://myformconnect.io/account/)**.
+2. Click on **Forms** in the top menu bar.
+3. Click **Add New Form** (or click on an existing form to edit).
+4. Copy the **FORM_ACTION_URL** provided for your form. It looks like this:
    ```text
-   https://myformcapture.com/f/YOUR_FORM_UUID
+   https://myformconnect.io/f/YOUR_FORM_UUID
    ```
-   *(Example: `https://myformcapture.com/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`)*
+   *(Example: `https://myformconnect.io/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`)*
 
 ---
 
@@ -49,13 +44,13 @@ Before starting, make sure you have:
 
 Create a new file in your project, for example `src/components/ContactForm.jsx`.
 
-Paste the following code, and simply replace `YOUR_FORM_ENDPOINT_HERE` with the URL you copied in Step 1:
+Paste the following code, and simply replace `YOUR_FORM_ACTION_URL` with the URL you copied in Step 1:
 
 ```jsx
 import React, { useState } from 'react';
 
-// 1. Paste your MyFormCapture endpoint URL here:
-const FORM_ENDPOINT = 'https://myformcapture.com/f/YOUR_FORM_UUID';
+// 1. Paste your MyFormConnect FORM_ACTION_URL here:
+const CONTACT_FORM_ACTION_URL = 'https://myformconnect.io/f/YOUR_FORM_UUID';
 
 export default function ContactForm() {
   const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
@@ -68,7 +63,7 @@ export default function ContactForm() {
     setErrorMessage('');
 
     try {
-      const response = await fetch(FORM_ENDPOINT, {
+      const response = await fetch(CONTACT_FORM_ACTION_URL, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -90,7 +85,7 @@ export default function ContactForm() {
     }
   };
 
-  // Reusable input style: boxSizing: 'border-box' prevents input overflow
+  // Reusable input styles — customize as needed to match your product design (boxSizing prevents overflow)
   const inputStyle = {
     width: '100%',
     boxSizing: 'border-box',
@@ -189,7 +184,7 @@ export default function ContactForm() {
       <p style={{ fontSize: '11px', color: '#64748b', textAlign: 'center', margin: '4px 0 0 0' }}>
         Powered by{' '}
         <a 
-          href="https://myformcapture.com" 
+          href="https://myformconnect.io" 
           target="_blank" 
           rel="noopener noreferrer"
           style={{ color: '#2D5DEA', fontWeight: 600, textDecoration: 'none' }}
@@ -226,7 +221,7 @@ export default function ContactForm() {
    npm run dev
    ```
 3. Fill out the form in your browser and click **Send Message**.
-4. Open your **MyFormCapture Dashboard** under **Submissions / Leads** — your new submission will be right there in real time!
+4. Open your **MyFormConnect Dashboard** under **Responses / Leads** — your new submission will be right there in real time!
 
 ---
 
@@ -234,14 +229,15 @@ export default function ContactForm() {
 
 ### 1. Career / Job Application Form (with File & Resume Upload)
 
-MyFormCapture automatically supports file uploads (PDF, DOCX, etc.) without you having to configure AWS S3, Cloudinary, or custom server buckets!
+MyFormConnect natively handles file uploads up to ~100MB across common document formats (PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, TXT, CSV) out of the box — no backend code, file hosting, or extra setup required.
 
 Simply use an `<input type="file" name="resume" />`, and `new FormData(form)` handles the rest:
 
 ```jsx
 import React, { useState } from 'react';
 
-const CAREERS_ENDPOINT = 'https://myformcapture.com/f/YOUR_FORM_UUID';
+// Replace with your actual FORM ACTION URL from dashboard
+const CAREERS_FORM_ACTION_URL = 'https://myformconnect.io/f/YOUR_FORM_UUID';
 
 export default function CareerForm() {
   const [status, setStatus] = useState('idle');
@@ -251,7 +247,7 @@ export default function CareerForm() {
     setStatus('submitting');
 
     try {
-      const res = await fetch(CAREERS_ENDPOINT, {
+      const res = await fetch(CAREERS_FORM_ACTION_URL, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -271,6 +267,7 @@ export default function CareerForm() {
     return <p>Application submitted! Our hiring team will review your profile.</p>;
   }
 
+  // Reusable input styles — customize as needed to match your product design (boxSizing prevents overflow)
   const inputStyle = {
     width: '100%',
     boxSizing: 'border-box',
@@ -337,7 +334,7 @@ export default function CareerForm() {
       <p style={{ fontSize: '11px', color: '#64748b', textAlign: 'center', marginTop: '8px' }}>
         Powered by{' '}
         <a
-          href="https://myformcapture.com"
+          href="https://myformconnect.io"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: '#2D5DEA', fontWeight: 600, textDecoration: 'none' }}
@@ -361,7 +358,7 @@ Perfect for a footer or landing page lead magnet:
 ```jsx
 import React, { useState } from 'react';
 
-const NEWSLETTER_ENDPOINT = 'https://myformcapture.com/f/YOUR_FORM_UUID';
+const NEWSLETTER_FORM_ACTION_URL = 'https://myformconnect.io/f/YOUR_FORM_UUID';
 
 export default function NewsletterForm() {
   const [status, setStatus] = useState('idle');
@@ -370,7 +367,7 @@ export default function NewsletterForm() {
     e.preventDefault();
     setStatus('loading');
     try {
-      const res = await fetch(NEWSLETTER_ENDPOINT, {
+      const res = await fetch(NEWSLETTER_FORM_ACTION_URL, {
         method: 'POST',
         headers: { Accept: 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
         body: new FormData(e.currentTarget),
@@ -429,9 +426,9 @@ export default function NewsletterForm() {
 ## 3 Golden Rules for Beginners
 
 ### 1. Always give each `<input>` a `name` attribute
-MyFormCapture uses the `name` attribute of each input as the field label in your dashboard.
+MyFormConnect uses the `name` attribute of each input as the field label in your dashboard.
 ```jsx
-// CORRECT: MyFormCapture will record this as "email"
+// CORRECT: MyFormConnect will record this as "email"
 <input name="email" type="email" />
 
 // INCORRECT: Missing name attribute; field data will be lost
@@ -469,7 +466,7 @@ body: JSON.stringify(formData)
 
 ### Common Network Tab Status Codes (Press F12 → Network)
 
-When testing your form, open your browser's Developer Tools (**F12** or right-click → **Inspect**), switch to the **Network** tab, click your form's submit button, and inspect the status code of the `POST` request to `myformcapture.com`:
+When testing your form, open your browser's Developer Tools (**F12** or right-click → **Inspect**), switch to the **Network** tab, click your form's submit button, and inspect the status code of the `POST` request to `myformconnect.io`:
 
 | Status Code | Meaning | Immediate Fix |
 | :--- | :--- | :--- |
@@ -481,9 +478,9 @@ When testing your form, open your browser's Developer Tools (**F12** or right-cl
 ---
 
 #### 1. `403 Forbidden`
-- **Why this happens:** MyFormCapture has **Domain Restriction** enabled to prevent unauthorized sites from spamming your endpoint, and your current domain (or local development port like `http://localhost:5173` / `http://localhost:3000`) is not on the whitelist yet.
+- **Why this happens:** MyFormConnect has **Domain Restriction** enabled to prevent unauthorized sites from spamming your endpoint, and your current domain (or local development port like `http://localhost:5173` / `http://localhost:3000`) is not on the whitelist yet.
 - **How to fix:**
-  1. Open your form in the **[MyFormCapture Dashboard](https://myformcapture.com)**.
+  1. Open your form in the **[MyFormConnect Dashboard](https://myformconnect.io/account/)**.
   2. Go to **Form Settings** → **Domain Restrictions / Allowed Domains**.
   3. Either:
      - Add your local development URL (e.g. `http://localhost:5173` or `http://localhost:3000`) and your production domain.
@@ -492,10 +489,10 @@ When testing your form, open your browser's Developer Tools (**F12** or right-cl
 ---
 
 #### 2. `404 Not Found`
-- **Why this happens:** The URL provided in your `fetch()` call does not exist on MyFormCapture's servers.
+- **Why this happens:** The URL provided in your `fetch()` call does not exist on MyFormConnect's servers.
 - **How to fix:**
   - Verify that your `FORM_ENDPOINT` constant is copied accurately from your dashboard.
-  - Correct format: `https://myformcapture.com/f/YOUR_FORM_UUID` (e.g. `https://myformcapture.com/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`).
+  - Correct format: `https://myformconnect.io/f/YOUR_FORM_UUID` (e.g. `https://myformconnect.io/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`).
   - Watch out for accidental spaces before/after the URL or leaving the placeholder string `YOUR_FORM_UUID`.
 
 ---
@@ -503,7 +500,7 @@ When testing your form, open your browser's Developer Tools (**F12** or right-cl
 #### 3. `422 Unprocessable Entity / Assets`
 - **Why this happens:** The server received the request, but cannot parse the data because it was submitted in an unexpected format (such as a stringified JSON object).
 - **How to fix:**
-  - MyFormCapture expects native multipart form data. Never send form data using `JSON.stringify()`.
+  - MyFormConnect expects native multipart form data. Never send form data using `JSON.stringify()`.
   - Always pass `new FormData(e.currentTarget)` directly:
     ```javascript
     // INCORRECT: Causes 422 error
@@ -518,14 +515,14 @@ When testing your form, open your browser's Developer Tools (**F12** or right-cl
 #### 4. `302 Found / 302 Moved Temporarily` (or CORS Error)
 - **Why this happens:** By default, traditional HTML forms perform a full browser redirect (HTTP 302) to a thank-you page after submitting. In a React single-page app, frontend `fetch()` cannot follow cross-origin redirects, causing the browser to throw a **CORS error** or report a failed redirect.
 - **How to fix:**
-  - Tell MyFormCapture you are sending an AJAX request from React by adding these two headers:
+  - Tell MyFormConnect you are sending an AJAX request from React by adding these two headers:
     ```javascript
     headers: {
       Accept: 'application/json',
       'X-Requested-With': 'XMLHttpRequest',
     }
     ```
-  - When MyFormCapture sees these headers, it returns a clean JSON `200 OK` response instead of a 302 redirect, preventing any CORS errors.
+  - When MyFormConnect sees these headers, it returns a clean JSON `200 OK` response instead of a 302 redirect, preventing any CORS errors.
 
 ---
 
@@ -543,10 +540,10 @@ If clicking your submit button does nothing or triggers an error, check these po
    }
    ```
 
-2. **Check your Form Endpoint URL (`FORM_ENDPOINT`)**:
-   Verify that your form action URL is copied accurately from your MyFormCapture dashboard:
-   - It should be in the format: `https://myformcapture.com/f/YOUR_FORM_UUID`
-   - Example: `https://myformcapture.com/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`
+2. **Check your Form Action URL (`FORM_ACTION_URL`)**:
+   Verify that your form action URL is copied accurately from your MyFormConnect dashboard:
+   - It should be in the format: `https://myformconnect.io/f/YOUR_FORM_UUID`
+   - Example: `https://myformconnect.io/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`
    - Ensure there are no accidental spaces, missing `https://`, or placeholder text (`YOUR_FORM_UUID`).
 
 3. **Check the Submit Button**:
@@ -559,15 +556,18 @@ If clicking your submit button does nothing or triggers an error, check these po
 4. **Inspect the Browser Console (F12)**:
    Press **F12** in your browser, switch to the **Console** and **Network** tabs, and submit the form again:
    - Look for red errors in the Console tab.
-   - In the Network tab, check the status code of the `POST` request to `myformcapture.com` (e.g. `200 OK` vs `403 Forbidden` / `404 Not Found`).
+   - In the Network tab, check the status code of the `POST` request to `myformconnect.io` (e.g. `200 OK` vs `403 Forbidden` / `404 Not Found`).
 
 ---
 
 #### Q: Form submitted successfully, but no data appears on MFC dashboard (or empty fields show up)
-If your form displays the success message but your dashboard shows blank or missing submission rows:
+If your form displays a success message but submissions are not showing up:
 
-1. **Missing `name` attribute on input fields (Most Common!)**:
-   The browser's native `new FormData(form)` **only captures fields with a valid `name` attribute**. An `id` or `placeholder` alone is NOT sufficient.
+1. **Wait a few seconds to 1 minute**:
+   Submission processing can take a brief moment. **Wait a few seconds** (up to a minute) and refresh your dashboard page.
+
+2. **If still not appearing — Check the `name` attribute (Most Common!)**:
+   The browser's native `new FormData(form)` **only captures inputs that have a `name` attribute**. An `id` or `placeholder` alone is NOT sent:
    ```jsx
    // WRONG: Browser ignores this input; dashboard receives nothing!
    <input id="email" placeholder="jane@example.com" />
@@ -575,22 +575,7 @@ If your form displays the success message but your dashboard shows blank or miss
    // CORRECT: Dashboard receives { email: "jane@example.com" }
    <input id="email" name="email" placeholder="jane@example.com" />
    ```
-   Check every `<input>`, `<textarea>`, and `<select>` element to confirm each has a `name` attribute.
 
-2. **Accidentally converting form data with `JSON.stringify()`**:
-   Ensure you pass `new FormData(form)` directly into the `fetch` body:
-   ```javascript
-   // WRONG
-   body: JSON.stringify({ email })
-
-   // CORRECT
-   body: new FormData(form)
-   ```
-
-3. **Check Allowed Domains (Domain Restriction)**:
-   In your [MyFormCapture Dashboard](https://myformcapture.com), open your form settings and check if **Domain Restriction** is enabled.
-   - If enabled, submissions originating from unauthorized URLs will be rejected.
-   - For local development, make sure `http://localhost:5173` or `http://localhost:3000` is included in your allowed domains list.
 
 ---
 
@@ -607,16 +592,29 @@ Without `e.preventDefault()`, the browser triggers its default HTML form submit 
 ---
 
 #### Q: How do I receive email alerts when someone fills out my form?
-In your [MyFormCapture Dashboard](https://myformcapture.com):
+In your [MyFormConnect Dashboard](https://myformconnect.io/account/):
 1. Open your form.
-2. Navigate to **Form Settings** → **Notifications**.
-3. Confirm your notification email address.
-4. Whenever a visitor submits your form, MyFormCapture sends an immediate email alert containing all submitted lead fields.
+2. In **Form Details** section click on **Edit** button.
+3. Scroll to the last
+4. Check the **Notify on Email** checkbox.
+5. Click on **Update Form** button.
+6. Now, whenever a visitor submits your form, MyFormConnect sends an instant email alert to your registered email address.
+
+---
+
+## Still Having Issues?
+
+If your form is still not working or you're encountering an error not covered in this guide:
+
+- **Contact Support**: Reach out directly via the **[MyFormConnect Support Center](https://myformconnect.io/support)** or email us at **[support@myformconnect.io](mailto:support@myformconnect.io)**.
+
+> 💡 **Tip for Faster Support:**
+> When reaching out, including a **screenshot of the problem**, your `FORM_ACTION_URL`, and any error messages from your browser's **Console** (F12) or **Network** tabs will help diagnose and resolve the issue much faster.
 
 ---
 
 ## Official Documentation & Links
 
-- **MyFormCapture Dashboard**: [https://myformcapture.com](https://myformcapture.com)
-- **Account Sign Up**: [https://myformcapture.com/users/sign_up](https://myformcapture.com/users/sign_up)
-- **Documentation**: [https://myformcapture.com/docs/getting-started](https://myformcapture.com/docs/getting-started)
+- **MyFormConnect Dashboard**: [https://myformconnect.io/account/](https://myformconnect.io/account/)
+- **Account Sign Up**: [https://myformconnect.io/users/sign_up](https://myformconnect.io/users/sign_up)
+- **Documentation**: [https://myformconnect.io/docs/getting-started](https://myformconnect.io/docs/getting-started)

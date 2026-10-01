@@ -27,16 +27,40 @@ Before starting, make sure you have:
 
 ## 3-Step Quick Start
 
-### Step 1: Copy Your Form URL from MyFormConnect
+### Step 1: Create Your Form & Copy Your Form Action URL
 
-1. Log in to your **[MyFormConnect Dashboard](https://myformconnect.io/account/)**.
-2. Click on **Forms** in the top menu bar.
-3. Click **Add New Form** (or click on an existing form to edit).
-4. Copy the **FORM_ACTION_URL** provided for your form. It looks like this:
+1. **Log in to your Dashboard**:
+   Sign in to your **[MyFormConnect Dashboard](https://myformconnect.io/account/)**.
+
+2. **Navigate to Domains**:
+   Click on **Domains** in the top navigation bar.
+
+3. **Add or Select a Domain**:
+   Click **Add New Domain** (or select an existing domain to add forms to it).
+
+4. **Enter Your Domain Details**:
+   - **Domain Name**: Provide a descriptive name for your project (e.g., `Local Development` or `My SaaS App`).
+   - **Domain URL**: Enter the origin URL where your React app runs:
+     - **For local development**: `http://localhost:5173` (Vite) or `http://localhost:3000` (Create React App / Next.js).
+     - **For production**: Your deployed website URL (e.g., `https://yourdomain.com`).
+
+5. **Create the Domain**:
+   Click the **Create Domain** button to save your domain.
+
+6. **Add a New Form**:
+   On the domain overview page, scroll down to the **Forms** section and click **Add New Form**.
+
+7. **Configure Form Fields**:
+   Fill in the required fields (such as your **Form Name**) and click **Create Form**.
+
+8. **Copy Your Form Action URL**:
+   Once created, MyFormConnect generates your unique **Form Action URL**. Copy this URL for use in your React component:
    ```text
    https://myformconnect.io/f/YOUR_FORM_UUID
    ```
    *(Example: `https://myformconnect.io/f/7db4d175-ba9c-4fd7-974b-3c9e4601247e`)*
+
+> 💡 **Tip:** Adding `http://localhost:5173` or `http://localhost:3000` as your Domain URL ensures local submissions succeed during development without encountering domain restriction or CORS issues.
 
 ---
 
